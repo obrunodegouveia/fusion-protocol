@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Fusion Protocol — Pedro Basto — An Unorthodox Approach to Longevity</title>
+<meta name="description" content="A fusion of multiple doctrines, therapies, and ideologies of longevity. 29 pillars from epigenetic clocks to mitochondrial biogenesis, NAD+ repletion, sirtuin signalling, sulfation, fasting, and universal antidotes. By Pedro Basto.">
+<meta name="author" content="Pedro Basto">
+<meta name="theme-color" content="#0a0a0a">
+
+<!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Fusion Protocol — An Unorthodox Approach to Longevity">
+<meta property="og:description" content="29 pillars of longevity. From epigenetic clocks to mitochondrial biogenesis, NAD+ repletion, sirtuin signalling, fasting, and universal antidotes. By Pedro Basto.">
+<meta property="og:image" content="https://fusion-protocol.vercel.app/og.png">
+<meta property="og:url" content="https://fusion-protocol.vercel.app">
+<meta property="og:site_name" content="The Fusion Protocol">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Fusion Protocol — An Unorthodox Approach to Longevity">
+<meta name="twitter:description" content="29 pillars of longevity. A fusion of multiple doctrines, therapies, and ideologies. By Pedro Basto.">
+<meta name="twitter:image" content="https://fusion-protocol.vercel.app/og.png">
+
+<!-- Favicon (inline SVG) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%230a0a0a'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='%23c9a84c' font-family='serif' font-style='italic'>F</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0a;--bg-alt:#0e0e0e;--bg-card:#151515;--bg-card-hover:#1a1a1a;--gold:#c9a84c;--gold-light:#e8d48b;--gold-dim:#8a7234;--text:#e8e4dc;--text-dim:#8a867e;--text-muted:#5a5750;--green:#4a7c59;--green-light:#6aad7a;--blue:#4a6a8c;--blue-light:#6a9abe;--purple:#6a4a7c;--purple-light:#9a7ab0;--amber:#8c7a4a;--amber-light:#b09a5a;--red:#9c4a4a;--red-light:#c06a6a;--olive:#6a8a4a;--olive-light:#8ab06a;--teal:#4a8c8c;--teal-light:#6ababa;--pink:#8c4a6a;--pink-light:#b06a8a;--cyan:#4a7c8c;--cyan-light:#6aadba;--indigo:#5a5a8c;--indigo-light:#7a7ab0;--lime:#7a8c4a;--lime-light:#9ab06a;--rose:#8c5a5a;--rose-light:#b07a7a;--border:#222;--border-light:#333}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;opacity:.022;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");pointer-events:none;z-index:9999}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:.7rem 2rem;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(24px);background:rgba(10,10,10,.82);border-bottom:1px solid var(--border);transition:padding .3s}
+nav.scrolled{padding:.4rem 2rem;background:rgba(10,10,10,.95)}
+.nl{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;letter-spacing:.1em;color:var(--gold);text-transform:uppercase;white-space:nowrap}
+.nl span{font-size:.75rem;color:#fff;font-weight:700;letter-spacing:.05em;display:block;font-family:'JetBrains Mono',monospace;text-transform:none;margin-top:-.1rem}
+.nk{display:flex;gap:.08rem;flex-wrap:wrap;justify-content:flex-end}
+.nk a{color:#fff;text-decoration:none;font-size:.68rem;letter-spacing:.03em;text-transform:uppercase;padding:.2rem .32rem;border-radius:3px;transition:all .3s;font-weight:700;white-space:nowrap}
+.nk a:hover{color:var(--gold);background:rgba(201,168,76,.08)}
+.nt{display:none;background:none;border:1px solid var(--border);color:var(--text-dim);padding:.3rem .6rem;border-radius:4px;font-size:.6rem;cursor:pointer;font-family:'JetBrains Mono',monospace}
+@media(max-width:960px){.nt{display:block}.nk{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(10,10,10,.97);border-bottom:1px solid var(--border);padding:.5rem;flex-direction:column}.nk.open{display:flex}.nk a{padding:.4rem .7rem;font-size:.65rem}}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:5.5rem 2rem 3.5rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-40%;left:-40%;width:180%;height:180%;background:radial-gradient(ellipse at 50% 30%,rgba(201,168,76,.06) 0%,transparent 55%),radial-gradient(ellipse at 20% 80%,rgba(74,106,140,.04) 0%,transparent 50%);animation:hg 12s ease-in-out infinite alternate}
+@keyframes hg{0%{transform:translate(0,0) scale(1)}100%{transform:translate(2%,-2%) scale(1.05)}}
+.hey{font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1.3rem;position:relative}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,6.5vw,5.5rem);font-weight:300;line-height:1.05;letter-spacing:-.02em;position:relative}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hsub{font-size:.9rem;color:var(--text-dim);max-width:580px;margin-top:1.3rem;font-weight:300;position:relative;line-height:1.8}
+.hau{font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:700;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-top:1.8rem;position:relative}
+.hau span{display:block;font-size:.5rem;color:var(--text-muted);letter-spacing:.06em;margin-top:.2rem}
+.hst{display:flex;gap:2.2rem;margin-top:2rem;position:relative;flex-wrap:wrap;justify-content:center}
+.hs{text-align:center}.hs .v{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1}
+.hs .l{font-family:'JetBrains Mono',monospace;font-size:.45rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-top:.2rem}
+.hl{width:1px;height:50px;background:linear-gradient(to bottom,var(--gold-dim),transparent);margin-top:1.5rem;position:relative}
+@keyframes fu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.af{animation:fu .75s ease-out both}.d1{animation-delay:.08s}.d2{animation-delay:.2s}.d3{animation-delay:.35s}.d4{animation-delay:.5s}.d5{animation-delay:.65s}
+.ps{padding:4rem 2rem;max-width:1200px;margin:0 auto;opacity:0;transform:translateY(28px);transition:opacity .6s ease-out,transform .6s ease-out}
+.ps.visible{opacity:1;transform:translateY(0)}
+.sh{display:flex;align-items:baseline;gap:1.2rem;margin-bottom:1.8rem;border-bottom:1px solid var(--border);padding-bottom:.9rem}
+.sn{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--section-color,var(--gold-dim));line-height:1;opacity:.32}
+.stg{flex:1}.sl{font-family:'JetBrains Mono',monospace;font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:var(--text-muted);margin-bottom:.12rem}
+.st{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3vw,2.3rem);font-weight:400;line-height:1.15}
+.si{color:var(--text-dim);font-size:.84rem;max-width:720px;margin-bottom:1.8rem;font-weight:300;line-height:1.8}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem}
+.sc{background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:1.3rem;position:relative;overflow:hidden;transition:all .3s cubic-bezier(.23,1,.32,1)}
+.sc:hover{background:var(--bg-card-hover);border-color:var(--border-light);transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,.3)}
+.sc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--section-color,var(--gold-dim));opacity:0;transition:opacity .3s}
+.sc:hover::before{opacity:1}
+.ci{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.95rem;margin-bottom:.7rem;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.15)}
+.sc h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:500;margin-bottom:.12rem}
+.sc .aka{font-family:'JetBrains Mono',monospace;font-size:.5rem;color:var(--text-muted);letter-spacing:.03em;margin-bottom:.6rem}
+.sc p{color:var(--text-dim);font-size:.74rem;line-height:1.65;font-weight:300}
+.ct{display:flex;flex-wrap:wrap;gap:.25rem;margin-top:.7rem}
+.tg{font-family:'JetBrains Mono',monospace;font-size:.45rem;padding:.15rem .4rem;border-radius:3px;background:rgba(201,168,76,.06);color:var(--section-color,var(--gold-dim));border:1px solid rgba(201,168,76,.1)}
+/* Read more */
+details{margin-top:.6rem}details summary{font-family:'JetBrains Mono',monospace;font-size:.55rem;color:var(--section-color,var(--gold-dim));cursor:pointer;letter-spacing:.05em}
+details summary:hover{color:var(--gold)}
+details .rm{color:var(--text-dim);font-size:.7rem;line-height:1.65;font-weight:300;margin-top:.5rem;padding:.8rem;background:rgba(0,0,0,.3);border-radius:4px;border:1px solid var(--border)}
+/* Colors */
+.c-green{--section-color:var(--green)}.c-green .ci{background:rgba(74,124,89,.1);border-color:rgba(74,124,89,.2)}.c-green .tg{background:rgba(74,124,89,.08);color:var(--green-light);border-color:rgba(74,124,89,.15)}
+.c-blue{--section-color:var(--blue)}.c-blue .ci{background:rgba(74,106,140,.1);border-color:rgba(74,106,140,.2)}.c-blue .tg{background:rgba(74,106,140,.08);color:var(--blue-light);border-color:rgba(74,106,140,.15)}
+.c-purple{--section-color:var(--purple)}.c-purple .ci{background:rgba(106,74,124,.1);border-color:rgba(106,74,124,.2)}.c-purple .tg{background:rgba(106,74,124,.08);color:var(--purple-light);border-color:rgba(106,74,124,.15)}
+.c-amber{--section-color:var(--amber)}.c-amber .ci{background:rgba(140,122,74,.1);border-color:rgba(140,122,74,.2)}.c-amber .tg{background:rgba(140,122,74,.08);color:var(--amber-light);border-color:rgba(140,122,74,.15)}
+.c-red{--section-color:var(--red)}.c-red .ci{background:rgba(156,74,74,.1);border-color:rgba(156,74,74,.2)}.c-red .tg{background:rgba(156,74,74,.08);color:var(--red-light);border-color:rgba(156,74,74,.15)}
+.c-olive{--section-color:var(--olive)}.c-olive .ci{background:rgba(106,138,74,.1);border-color:rgba(106,138,74,.2)}.c-olive .tg{background:rgba(106,138,74,.08);color:var(--olive-light);border-color:rgba(106,138,74,.15)}
+.c-teal{--section-color:var(--teal)}.c-teal .ci{background:rgba(74,140,140,.1);border-color:rgba(74,140,140,.2)}.c-teal .tg{background:rgba(74,140,140,.08);color:var(--teal-light);border-color:rgba(74,140,140,.15)}
+.c-pink{--section-color:var(--pink)}.c-pink .ci{background:rgba(140,74,106,.1);border-color:rgba(140,74,106,.2)}.c-pink .tg{background:rgba(140,74,106,.08);color:var(--pink-light);border-color:rgba(140,74,106,.15)}
+.c-gold{--section-color:var(--gold)}
+.c-cyan{--section-color:var(--cyan)}.c-cyan .ci{background:rgba(74,124,140,.1);border-color:rgba(74,124,140,.2)}.c-cyan .tg{background:rgba(74,124,140,.08);color:var(--cyan-light);border-color:rgba(74,124,140,.15)}
+.c-indigo{--section-color:var(--indigo)}.c-indigo .ci{background:rgba(90,90,140,.1);border-color:rgba(90,90,140,.2)}.c-indigo .tg{background:rgba(90,90,140,.08);color:var(--indigo-light);border-color:rgba(90,90,140,.15)}
+.c-lime{--section-color:var(--lime)}.c-lime .ci{background:rgba(122,140,74,.1);border-color:rgba(122,140,74,.2)}.c-lime .tg{background:rgba(122,140,74,.08);color:var(--lime-light);border-color:rgba(122,140,74,.15)}
+.c-rose{--section-color:var(--rose)}.c-rose .ci{background:rgba(140,90,90,.1);border-color:rgba(140,90,90,.2)}.c-rose .tg{background:rgba(140,90,90,.08);color:var(--rose-light);border-color:rgba(140,90,90,.15)}
+.ig{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1rem}
+.ip{background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:1.3rem;position:relative;overflow:hidden}
+.ip::after{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--section-color,var(--gold-dim));opacity:.5}
+.ip h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:500;margin-bottom:.4rem}
+.ip p,.ip li{color:var(--text-dim);font-size:.72rem;line-height:1.65;font-weight:300}
+.ip ul{list-style:none;padding:0}.ip ul li{padding:.2rem 0 .2rem 1rem;position:relative}.ip ul li::before{content:'›';position:absolute;left:0;color:var(--section-color,var(--gold-dim));font-weight:700}
+.co{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--section-color,var(--gold));border-radius:0 6px 6px 0;padding:1.2rem 1.4rem;margin-bottom:1.5rem}
+.co h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:500;margin-bottom:.25rem;color:var(--section-color,var(--gold))}
+.co p{color:var(--text-dim);font-size:.76rem;line-height:1.7;font-weight:300}
+.sr{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.8rem}
+.sb{background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:1rem 1.2rem;text-align:center;flex:1;min-width:110px}
+.sb .sv{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;color:var(--section-color,var(--gold));line-height:1}
+.sb .slb{font-family:'JetBrains Mono',monospace;font-size:.48rem;letter-spacing:.07em;text-transform:uppercase;color:var(--text-muted);margin-top:.25rem}
+.vb{display:flex;align-items:center;gap:.7rem;margin-bottom:.6rem}
+.vb-l{font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--text-dim);width:120px;text-align:right;flex-shrink:0}
+.vb-t{flex:1;height:4px;background:var(--border);border-radius:3px;overflow:hidden}.vb-f{height:100%;border-radius:3px}
+.vb-v{font-family:'JetBrains Mono',monospace;font-size:.65rem;color:var(--text-dim);width:40px;flex-shrink:0}
+.banner{background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:2.8rem 2rem}
+.bi{max-width:1200px;margin:0 auto}
+.bq{font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,2vw,1.6rem);font-weight:300;font-style:italic;color:var(--text-dim);text-align:center;max-width:780px;margin:0 auto;line-height:1.5}.bq em{color:var(--gold);font-style:italic}
+.dv{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;gap:1.3rem}.dv::before,.dv::after{content:'';flex:1;height:1px;background:var(--border)}.dv span{font-family:'Cormorant Garamond',serif;font-size:.9rem;color:var(--gold-dim);opacity:.3}
+.disc{max-width:1200px;margin:0 auto;padding:2rem 2rem 3.5rem;text-align:center}
+.disc p{color:var(--text-muted);font-size:.65rem;max-width:620px;margin:0 auto;line-height:1.8;font-weight:300}
+footer{border-top:1px solid var(--border);padding:1.8rem 2rem;text-align:center}
+footer p{font-family:'JetBrains Mono',monospace;font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
+footer .ab{max-width:520px;margin:0 auto .8rem;font-family:'DM Sans',sans-serif;font-size:.68rem;color:var(--text-dim);line-height:1.7;font-weight:300;letter-spacing:0;text-transform:none}
+/* SECTION NAV */
+.snav{position:fixed;left:1rem;top:50%;transform:translateY(-50%);z-index:900;display:flex;flex-direction:column;gap:.35rem;opacity:0;transition:opacity .5s}
+.snav.vis{opacity:1}
+.snav a{display:flex;align-items:center;gap:.5rem;text-decoration:none;group:1}
+.snav .dot{width:6px;height:6px;border-radius:50%;background:var(--border-light);transition:all .3s;flex-shrink:0}
+.snav .dlbl{font-family:'JetBrains Mono',monospace;font-size:0;color:var(--text-muted);transition:all .3s;white-space:nowrap;opacity:0}
+.snav a:hover .dlbl{font-size:.5rem;opacity:1}
+.snav a:hover .dot{background:var(--gold-dim);transform:scale(1.5)}
+.snav a.act .dot{background:var(--gold);transform:scale(1.8)}
+.snav a.act .dlbl{font-size:.5rem;opacity:.7;color:var(--gold-dim)}
+
+/* SEARCH */
+.search-wrap{position:fixed;top:0;left:0;right:0;z-index:999;display:none;padding:5rem 2rem 2rem;background:rgba(10,10,10,.95);backdrop-filter:blur(30px)}
+.search-wrap.open{display:block}
+.search-box{max-width:600px;margin:0 auto;position:relative}
+.search-box input{width:100%;background:var(--bg-card);border:1px solid var(--border-light);border-radius:8px;padding:.9rem 1.2rem .9rem 2.8rem;color:var(--text);font-family:'DM Sans',sans-serif;font-size:1rem;outline:none;transition:border-color .3s}
+.search-box input:focus{border-color:var(--gold-dim)}
+.search-box input::placeholder{color:var(--text-muted)}
+.search-icon{position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:.9rem}
+.search-close{position:absolute;right:1rem;top:50%;transform:translateY(-50%);color:var(--text-muted);cursor:pointer;font-size:1.1rem;background:none;border:none}
+.search-results{max-width:600px;margin:1rem auto 0;max-height:60vh;overflow-y:auto}
+.search-hit{background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:1rem 1.2rem;margin-bottom:.5rem;cursor:pointer;transition:border-color .2s}
+.search-hit:hover{border-color:var(--gold-dim)}
+.search-hit h4{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold);margin-bottom:.2rem}
+.search-hit p{font-size:.7rem;color:var(--text-dim);line-height:1.5}
+.search-hit .sh-section{font-family:'JetBrains Mono',monospace;font-size:.5rem;color:var(--text-muted);letter-spacing:.08em;text-transform:uppercase}
+.search-trigger{position:fixed;top:3.2rem;right:1.5rem;z-index:1001;background:none;border:1px solid var(--blue-light);color:var(--blue-light);padding:.25rem .6rem;border-radius:4px;cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:.55rem;font-weight:500;letter-spacing:.06em;transition:all .3s}
+.search-trigger:hover{color:var(--gold);border-color:var(--gold-dim)}
+
+/* TIMING PROTOCOL */
+.timing{display:flex;gap:.8rem;margin-bottom:2rem;flex-wrap:wrap}
+.timing-slot{background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:1rem 1.2rem;flex:1;min-width:180px;position:relative;overflow:hidden}
+.timing-slot::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--slot-color,var(--gold-dim))}
+.timing-slot h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:500;color:var(--slot-color,var(--gold));margin-bottom:.4rem}
+.timing-slot .t-time{font-family:'JetBrains Mono',monospace;font-size:.5rem;color:var(--text-muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.5rem}
+.timing-slot ul{list-style:none;padding:0}
+.timing-slot li{font-size:.68rem;color:var(--text-dim);padding:.15rem 0 .15rem .8rem;position:relative;font-weight:300}
+.timing-slot li::before{content:'·';position:absolute;left:0;color:var(--slot-color,var(--gold-dim));font-weight:700}
+
+/* CARD STAGGER */
+.ps.visible .sc{opacity:0;animation:cardIn .5s ease-out forwards}
+.ps.visible .sc:nth-child(1){animation-delay:.05s}
+.ps.visible .sc:nth-child(2){animation-delay:.1s}
+.ps.visible .sc:nth-child(3){animation-delay:.15s}
+.ps.visible .sc:nth-child(4){animation-delay:.2s}
+.ps.visible .sc:nth-child(5){animation-delay:.25s}
+.ps.visible .sc:nth-child(6){animation-delay:.3s}
+.ps.visible .sc:nth-child(7){animation-delay:.35s}
+.ps.visible .sc:nth-child(8){animation-delay:.4s}
+.ps.visible .sc:nth-child(9){animation-delay:.45s}
+.ps.visible .sc:nth-child(10){animation-delay:.5s}
+.ps.visible .sc:nth-child(11){animation-delay:.55s}
+.ps.visible .sc:nth-child(12){animation-delay:.6s}
+.ps.visible .sc:nth-child(13){animation-delay:.65s}
+.ps.visible .sc:nth-child(14){animation-delay:.7s}
+@keyframes cardIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+/* BACK TO TOP */
+.btt{position:fixed;bottom:2rem;right:2rem;z-index:900;width:40px;height:40px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border);color:var(--gold-dim);display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transform:translateY(10px);transition:all .3s;font-size:.9rem}
+.btt.vis{opacity:1;transform:translateY(0)}
+.btt:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+
+/* CARD 3D HOVER */
+.sc{transform-style:preserve-3d;perspective:800px}
+.sc:hover{transform:translateY(-2px) rotateX(1deg) rotateY(-1deg)}
+
+@media(max-width:768px){.ps{padding:2.5rem 1rem}.sh{flex-direction:column;gap:.3rem}.sn{font-size:1.8rem}.cg,.ig{grid-template-columns:1fr}.sr{flex-direction:column}.hst{gap:1.2rem}.vb .vb-l{width:80px;font-size:.5rem}.snav{display:none}.search-trigger{right:5rem;top:.55rem}.timing{flex-direction:column}}
+</style>
+</head>
+<body>
+
+<nav id="mainNav">
+  <div class="nl">The Fusion Protocol<span>by Pedro Basto</span></div>
+  <button class="nt" onclick="document.querySelector('.nk').classList.toggle('open')">Menu</button>
+  <div class="nk">
+    <a href="#fundamentals">Fundamentals</a><a href="#lifestyle">Lifestyle</a><a href="#fasting">Fasting</a><a href="#stress">Stress</a><a href="#biomarkers">Biomarkers</a><a href="#building-blocks">Blocks</a><a href="#nutrition">Nutrition</a><a href="#gut">Gut</a><a href="#recycle">Recycle</a><a href="#nad">NAD+</a><a href="#mito">Mito</a><a href="#antioxidants">A.O.</a><a href="#cardio">Cardio</a><a href="#anti-inflammatories">Anti-Infl.</a><a href="#inflammation-vectors">Vectors</a><a href="#oils">Oils</a><a href="#neuro">Neuro</a><a href="#magnesium">Mag</a><a href="#detox">Detox</a><a href="#organ-detox">Organs</a><a href="#mycotoxins">Mycotox</a><a href="#genotoxicity">DNA</a><a href="#teas">Teas</a><a href="#rlt">RLT</a><a href="#antidotes">Antidotes</a><a href="#coffee">Coffee</a><a href="#supplements">Supps</a><a href="#implementation">Implement</a>
+  </div>
+</nav>
+
+<!-- Search Trigger -->
+<button class="search-trigger" onclick="toggleSearch()" title="Search (Ctrl+K)">⌕ Search</button>
+
+<!-- Search Overlay -->
+<div class="search-wrap" id="searchWrap">
+  <div class="search-box">
+    <span class="search-icon">⌕</span>
+    <input type="text" id="searchInput" placeholder="Search supplements, compounds, sections..." autocomplete="off">
+    <button class="search-close" onclick="toggleSearch()">✕</button>
+  </div>
+  <div class="search-results" id="searchResults"></div>
+</div>
+
+<!-- Section Navigator -->
+<div class="snav" id="sectionNav"></div>
+
+<!-- Back to Top -->
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top (T)">↑</button>
+
+<section class="hero">
+  <div class="hey af d1">An unorthodox approach to longevity</div>
+  <h1 class="af d2">The <em>Fusion</em><br>Protocol</h1>
+  <p class="hsub af d3">A fusion of multiple doctrines, therapies, and ideologies of longevity — from epigenetic clocks to mitochondrial biogenesis, NAD+ (Nicotinamide Adenine Dinucleotide) repletion, sirtuin signalling, sulfation, fasting, and universal antidotes.</p>
+  <div class="hau af d4">Pedro Basto<span>Longevity Researcher & Protocol Designer</span></div>
+  <div class="hst af d5">
+    <div class="hs"><div class="v">80%</div><div class="l">Lifestyle</div></div>
+    <div class="hs"><div class="v">20%</div><div class="l">Genetics</div></div>
+    <div class="hs"><div class="v">28</div><div class="l">Pillars</div></div>
+  </div>
+  <div class="hl af d5"></div>
+</section>
+
+<!-- Core Tenet -->
+<div class="banner"><div class="bi"><p class="bq" style="font-size:clamp(1rem,1.8vw,1.4rem)">"80% of longevity outcomes are lifestyle. Only 20% genetics. <em>Motivation is temporary. Discipline is timeless.</em>"</p></div></div>
+
+<!-- 00 FUNDAMENTALS -->
+<section class="ps c-gold" id="fundamentals">
+  <div class="sh"><div class="sn">00</div><div class="stg"><div class="sl">Core Principles</div><h2 class="st">Longevity Fundamentals</h2></div></div>
+  <p class="si">Longevity is slowing the speed at which biological age advances relative to chronological age. Why do we age? We age because cells lose their packaging and identity, and with that, the ability to rebuild, recycle, and repair the body. 80% of longevity outcomes are lifestyle, 20% genetics.</p>
+
+  <div class="co" style="border-left-color:var(--gold)"><h4>The Core Thesis</h4><p>The human body can heal almost everything given three essential conditions: <strong style="color:var(--gold)">an excess of energy</strong> within an <strong style="color:var(--gold)">extremely well hydrated</strong>, <strong style="color:var(--gold)">alkaline environment</strong>. Energy = NAD+/ATP (Adenosine Triphosphate)/mitochondria. Hydration = pure water + electrolytes. Alkalinity = diet, minerals, detoxification.</p></div>
+  <div class="co"><h4>Cancer Cannot Progress in an Alkaline Environment</h4><p>If the liver is healthy, cancer cannot get hold of the body. Liver detox and support (P450 activation, taurine, black seed oil, spirulina, neem leaf extract, milk thistle, sulfation pathways) are the frontline defence.</p></div>
+  <div class="co"><h4>The Positive Feedback Loop</h4><p>NAD+ repletion → ATP synthesis → more energy → better exercise → better nutrition → better sleep → enhanced repair → repeat. Start anywhere, the loop accelerates everything.</p></div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;margin-bottom:1rem;color:var(--text)">Speed of Ageing</h3>
+  <div style="margin-bottom:1.8rem">
+    <div class="vb"><div class="vb-l">Unhealthy</div><div class="vb-t"><div class="vb-f" style="width:90%;background:var(--red-light)"></div></div><div class="vb-v" style="color:var(--red-light)">2-3×</div></div>
+    <div class="vb"><div class="vb-l">Average</div><div class="vb-t"><div class="vb-f" style="width:50%;background:var(--amber-light)"></div></div><div class="vb-v" style="color:var(--amber-light)">1.0×</div></div>
+    <div class="vb"><div class="vb-l">Optimised</div><div class="vb-t"><div class="vb-f" style="width:30%;background:var(--green-light)"></div></div><div class="vb-v" style="color:var(--green-light)">0.7×</div></div>
+    <div class="vb"><div class="vb-l">Bryan Johnson</div><div class="vb-t"><div class="vb-f" style="width:18%;background:var(--blue-light)"></div></div><div class="vb-v" style="color:var(--gold)">0.48×</div></div>
+  </div>
+
+  <div class="ig">
+    <div class="ip"><h3>Ageing as Cellular Disease</h3><p>Senescent "zombie" cells accumulate, secreting inflammatory SASP (Senescence-Associated Secretory Phenotype) signals. Organs like liver and lungs can regenerate — longevity must address multi-organ ageing simultaneously.</p></div>
+    <div class="ip"><h3>Water & Terrain Theory</h3><p>Distillation or gravity filtration preferred, remineralisation via Celtic salt. For drinking: the gold standard is purified water stored in a copper vessel. For long-term storage: stainless steel. For cooking and tableware: full stainless steel or copper (naturally antibacterial, antifungal).</p><details><summary>Read more: Copper Vessel</summary><div class="rm">Kills bacteria, sterilises water. Improves digestion, cleanses &amp; detoxes, nutrient absorption, immunity, arthritis. Eliminates anaemia, iron absorption. Boosts skin, heart, brain &amp; bone health. Regulates liver, kidney, thyroid, blood pressure, cholesterol, triglycerides. Prevents sun damage, speeds wound healing. Copper is an antioxidant that fights free radicals causing cancer &amp; heart disease. When we store water overnight in a copper vessel, copper ions dissolve into the water and kill harmful microbes — this is called the oligodynamic effect.</div></details><details><summary>Reverse Osmosis Water Filtration</summary><div class="rm">A reverse osmosis water filtration system uses a semi-permeable membrane to remove contaminants, effectively eliminating up to 99% of impurities including heavy metals, bacteria, and dissolved solids.</div></details><details><summary>Structured Water (EZ Water) — The Fourth Phase</summary><div class="rm">Professor Gerald H. Pollack (University of Washington) discovered a <strong>fourth phase of water</strong> beyond solid, liquid, and vapour — the Exclusion Zone (EZ). When water contacts hydrophilic surfaces, it spontaneously forms vast ordered zones (up to 500+ micrometres) that exclude virtually all solutes and particles. This EZ water has a hexagonal, honeycomb-sheet molecular structure — similar to ice but in a semi-liquid gel-like state. Its formula is <strong>H₃O₂</strong> (not H₂O) — a fundamentally different molecular arrangement.<br><br><strong>The Water Battery:</strong> EZ water carries a net negative charge while bulk water beyond it accumulates protons (positive charge), creating a natural charge separation — a water battery sustained by radiant energy, particularly infrared light from the sun. The more infrared energy water absorbs, the larger the EZ grows and the more charge it stores.<br><br><strong>Biological significance:</strong> Your cells are 99% water molecules by count. Pollack's research suggests EZ water is what lines cell membranes, drives blood flow in capillaries, and powers countless biological processes. Fresh organic fruits and vegetables naturally contain EZ water — one reason they're so hydrating and health-promoting. Sunlight energises water inside your body, expanding EZ zones and enhancing cellular function.<br><br>Source: <em>The Fourth Phase of Water: Beyond Solid, Liquid, and Vapor</em> (Gerald H. Pollack, 2013). Endorsed by Nobel Laureate Brian Josephson (Cambridge University).</div></details></div>
+    <div class="ip"><h3>Metabolic Flexibility</h3><p>Ability to switch between glucose and fat oxidation. Inflexible = locked in glucose-only → more ROS (Reactive Oxygen Species), insulin resistance, lipotoxicity. Fasting, HIIT, and C8 MCT oil train this flexibility.</p></div>
+    <div class="ip"><h3>Lipotoxicity</h3><p>Excess non-healthy fatty acids in non-adipose tissues (liver, muscle, pancreas, heart) cause dysfunction and insulin resistance. Metabolic flexibility, proper fatty acid selection, and sulfation pathways are the defence.</p></div>
+    <div class="ip"><h3>Sulfation — The Lightning Bolt</h3><p>Think of sulfation as life's vitality — the conductor of life, like an electrical grid. Sulfur electrically charged by light and oxygen: Sulfur + Light + Oxygen = Sulfation. It makes fat-loving toxins water-soluble for excretion through kidneys, bile, and other pathways. Activated sulfur is NOT stored — yet in great demand at all times. It keeps gut linings tight, collagen strong, joints solid, hormones regulated, skin supple, metabolism humming. Without enough, structure falls apart, metabolism craters, and you can no longer detoxify. Sources: MSM, ALA (Alpha Lipoic Acid), taurine, NAC (N-Acetyl Cysteine), glucosamine sulfate, DMSO (Dimethyl Sulfoxide), garlic, broccoli sprouts, cabbage, meats, eggs, avocado, beans, Epsom salt baths.</p></div>
+    <div class="ip"><h3>ROS &amp; Oxidative Stress</h3><p>ROS (Reactive Oxygen Species) are natural byproducts of mitochondrial ATP (Adenosine Triphosphate) production. Low levels = signalling. High levels = DNA damage, lipid peroxidation, protein oxidation, driving ageing across all tissues.</p></div>
+  </div>
+
+  <div class="banner" style="margin-top:2rem"><div class="bi"><p class="bq">"At the heart of most diseases lies a deficiency in minerals, a dysfunction of the mitochondria, and <em>elevated blood sugar levels (HbA1c)</em>."</p></div></div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 01 LIFESTYLE -->
+<section class="ps c-green" id="lifestyle">
+  <div class="sh"><div class="sn">01</div><div class="stg"><div class="sl">Dr. Oliver Zolman's Protocol</div><h2 class="st">Lifestyle Pillars</h2></div></div>
+  <p class="si">Before any supplement, lifestyle basics add 12+ years. Nutrition ~40%, sleep ~50%, exercise ~10% of longevity influence. The reason why the nutrition weighting is 4× higher than exercise is because you can't exercise your way out of bad nutrition. Three levels: Lifestyle → Non-Ageing Interventions → Ageing Cause Reversal.</p>
+  <div class="sr">
+    <div class="sb"><div class="sv" style="color:var(--green-light)">+12y</div><div class="slb">Quit smoking</div></div>
+    <div class="sb"><div class="sv" style="color:var(--green-light)">+10y</div><div class="slb">Mental health</div></div>
+    <div class="sb"><div class="sv" style="color:var(--green-light)">+8y</div><div class="slb">Exercise 6h/wk</div></div>
+    <div class="sb"><div class="sv" style="color:var(--green-light)">+5y</div><div class="slb">20% deficit</div></div>
+    <div class="sb"><div class="sv" style="color:var(--green-light)">+5y</div><div class="slb">BMI 18.5-22.5</div></div>
+    <div class="sb"><div class="sv" style="color:var(--green-light)">+2y</div><div class="slb">Wine 40-120ml/d</div></div>
+  </div>
+  <div class="ig">
+    <div class="ip"><h3>Level 1 — Lifestyle</h3><ul><li>Sleep 7.5-8.5h circadian-aligned, no food 4-5h before bed</li><li>150 min/wk cardio + 75 min HIIT + 2-3 strength sessions</li><li>HIIT: 6×30s max effort, 1-1.5 min rest (12 min minimum)</li><li>AHEI-2010 (Alternative Healthy Eating Index) diet, 20% caloric deficit</li><li>Holistic abilities: flexibility, elasticity, balance, coordination, mental agility, mobility, power, cardio, strength (muscle)</li></ul><details><summary>Read more: Sleep</summary><div class="rm">Lowering your RHR (Resting Heart Rate) before bed is one of the best sleep prep habits you can do. Switch off all digital devices at least 30-60 minutes before bedtime. Avoid exercising/working late (at least 3-4 hours prior to sleep). Absolutely no food/alcohol/substances that can alter mood/perception at least 4-5 hours prior to sleep. Avoid blue lights (switch red lights on instead). Practice meditation, breathwork. Read hardcover books.</div></details><div style="margin-top:1rem;text-align:center"><img src="human-abilities.jpg" alt="Human Abilities Wheel — Strength, Cardio, Flexibility, Elasticity, Power, Mobility, Coordination, Balance, Mental Agility, Endurance" style="max-width:100%;border-radius:6px;opacity:.9"></div></div>
+    <div class="ip"><h3>Level 2 — Non-Ageing Interventions</h3><ul><li>1. Building healthcare team (professionals, friends, family)</li><li>2. Solving non-ageing conditions (autoimmune, rare diseases)</li><li>3. Sex &amp; sexual health</li><li>4. MSK injury prevention &amp; recovery</li><li>5. Avoiding harm (clinicians, therapies, disasters)</li><li>6. EBM (Evidence-Based Medicine) skills</li><li>7. Genomics (polygenic risk, drug responses)</li><li>8. Cognitive enhancement</li><li>9. Testing equipment (devices, imaging, tracking)</li><li>10. Environmental exposures (air, light, water)</li><li>11. Emergency medicine &amp; cryopreservation</li><li>12. Biobanking (self, tissue)</li></ul></div>
+    <div class="ip"><h3>Level 3 — Ageing Cause Reversal</h3><p>8 categories of ageing pathology across all 81 organ types:</p><ul><li>1. Too Few Cells: stem cell exhaustion, cell loss, fewer mitochondria</li><li>2. Too Many Cells: cancer, zombie cells, fat cells</li><li>3. Damaged Components: mito mutations, genomic instability, telomere shortening</li><li>4. Waste Inside Cells: lipofuscin, disabled macroautophagy</li><li>5. Waste Between Cells: amyloid build-up</li><li>6. Damaged Scaffold: cross-link stiffening, AGEs (Advanced Glycation End-products)</li><li>7. Epigenetic Changes: Epigenetic drift/noise (exdifferentiation)</li><li>8. Inter-Cellular Communication: dysbiosis, chronic inflammation, deregulated nutrient sensing</li></ul></div>
+    <div class="ip"><h3>Exercise Recovery</h3><ul><li>Cold plunges are superb for exercise/muscle recovery</li><li>L-Citrulline, Ashwagandha, NACET, quality collagen (or make your own!)</li><li>Creatine, Astaxanthin for repair and antioxidant support</li><li>Learn home purity tests for collagen, honey, olive oil, etc.</li></ul><details><summary>Read more: Making your own Collagen</summary><div class="rm">Learn to make your own collagen at home! This will require: 1.2kg of chicken feet, large cooking pan/pot (stainless steel or cast iron), 6 litres of purified/filtered water, 1 purple onion, organic parsley, apple cider vinegar. Contact us for more details!</div></details><details><summary>Read more: Conducting your own purity tests</summary><div class="rm">Available on the next update!</div></details></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 02 FASTING -->
+<section class="ps c-amber" id="fasting">
+  <div class="sh"><div class="sn">02</div><div class="stg"><div class="sl">Mega Heavyweight of Nutrition</div><h2 class="st">Fasting</h2></div></div>
+  <p class="si">One of the most powerful longevity interventions available — free, ancient, and profoundly effective. Minimum 18 hours for meaningful autophagy. Finish last meal as early as possible. Skip a meal now and then.</p>
+  <div class="ig">
+    <div class="ip"><h3>Intermittent Fasting (18h+)</h3><ul><li>18 hours minimum for meaningful autophagy activation</li><li>Eat last meal as early as possible — maximise fasting during sleep</li><li>Skip a meal now and then — flexibility over rigidity</li></ul></div>
+    <div class="ip"><h3>Proteolytic Enzymes — Fasted is King</h3><ul><li>Papaya seeds (carpain + benzyl isothiocyanate)</li><li>Boiled water of pineapple peel or hard pineapple core (bromelain)</li><li>Fasted enzymes break down damaged proteins, fibrin, inflammatory debris</li></ul></div>
+    <div class="ip"><h3>Turbo Boost Fasting</h3><ul><li>1 tbsp Green EVOO (Extra Virgin Olive Oil) within 18h+ window boosts autophagy</li><li>C8 MCT oil also works wonders — direct ketone production</li><li>These fats don't spike insulin, maintaining fasted state</li></ul></div>
+    <div class="ip"><h3>Extended Fasts</h3><ul><li>48-hour fast at least once/year (ideally 72h+)</li><li>2-3 × 24-hour fasts per year</li><li>Deep autophagy, stem cell regeneration, immune reset</li><li>Break with bone broth, then light protein</li></ul><details><summary>Read more: Deep autophagy — Autophagy types</summary><div class="rm">"Self-eating" — the cell's recycling and quality control system. Degrades damaged organelles, misfolded proteins, and intracellular pathogens. Three distinct types, each with different mechanisms and triggers.<br><br><strong>Macroautophagy — The Main Pathway:</strong> Autophagosome engulfs damaged organelles → lysosomal degradation. Triggered by fasting (18h+), exercise, spermidine. Includes mitophagy (mitochondrial clearance). The primary cleanup mechanism.<br><br><strong>Microautophagy — Direct Lysosomal Engulfment:</strong> Lysosome directly invaginates to engulf small cytoplasmic portions. No autophagosome needed. Constitutive quality control — always running in the background.<br><br><strong>Chaperone-Mediated Autophagy (CMA) — Targeted Protein Removal:</strong> HSC70 chaperones recognise KFERQ motif on target proteins, unfold them, thread through LAMP-2A into lysosome. Highly selective — removes specific damaged proteins without bulk destruction.</div></details></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 03 STRESS -->
+<section class="ps c-teal" id="stress">
+  <div class="sh"><div class="sn">03</div><div class="stg"><div class="sl">The Spiritus Pathway</div><h2 class="st">Stress Management</h2></div></div>
+  <p class="si">Chronic stress elevates cortisol, suppresses immunity, disrupts sleep, drives inflammation. As important as nutrition and exercise.</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">🌬️</div><h3>Breathwork</h3><div class="aka">Wim Hof + Daily Deep Breathing</div><p>Daily deep breathing minimum 10 minutes. Wim Hof: 30-40 power breaths (deep inhale, passive exhale), then breath hold. Key: end with apnea on FULLY EMPTY lungs — exhale completely first, then hold for minimum 60 seconds (target 90s). Empty-lung apnea delivers 5× more oxygen to brain and heart via the Bohr effect — CO₂ build-up forces haemoglobin to release stored O₂ to vital organs.</p><div class="ct"><span class="tg">Wim Hof</span><span class="tg">apnea empty lungs</span><span class="tg">5× O₂ brain</span></div></div>
+    <div class="sc"><div class="ci">🧘</div><h3>Meditation</h3><div class="aka">Parasympathetic Activation</div><p>Reduces cortisol, improves HRV (Heart Rate Variability), lengthens telomeres. 10 min/day shows measurable benefits.</p><div class="ct"><span class="tg">cortisol</span><span class="tg">HRV</span><span class="tg">telomeres</span></div></div>
+    <div class="sc"><div class="ci">🥶</div><h3>Hormetics</h3><div class="aka">Cold/Hot Exposure</div><p>Hormesis = small stress → big adaptation. <strong>Heat:</strong> Dry Finnish Sauna at 95°C+ for minimum 20 minutes is the gold standard — the most complete and beneficial detox and health effects. Activates heat shock proteins (HSPs) that repair misfolded proteins and protect cells. <strong>Cold:</strong> Cold plunges below 5°C for more than 2 minutes activate cold shock proteins (CSPs), brown fat thermogenesis, and norepinephrine 2-3×. CSPs complement HSPs for comprehensive cellular resilience.</p><details><summary>Read more: Critical Warnings</summary><div class="rm"><strong>Men must protect testicles:</strong> Cover with ice patches during sauna sessions. Fertility and virility biomarkers (sperm count, motility, testosterone) will plunge drastically if testicles are exposed to sustained high heat without cooling. This is non-negotiable for men using the protocol. <strong>Hair/capillaries:</strong> Both men and women should apply cooling treatment to the scalp and hair during sauna — heat damages hair follicle capillaries over time. Use a cold wet towel or ice cap on the head during dry sauna sessions.</div></details><div class="ct"><span class="tg">Finnish sauna 95°C+</span><span class="tg">HSPs</span><span class="tg">CSPs below 5°C for 2+ min</span><span class="tg">protect testicles</span></div></div>
+    <div class="sc"><div class="ci">🚶</div><h3>Gentle Exercise</h3><div class="aka">Walking in Nature</div><p>Shinrin-yoku reduces cortisol, blood pressure, inflammatory markers. Moves lymph, aids digestion, calms nervous system.</p><div class="ct"><span class="tg">lymphatic</span><span class="tg">shinrin-yoku</span></div></div>
+    <div class="sc"><div class="ci">⚡</div><h3>Grounding</h3><div class="aka">Earthing — Electron Transfer</div><p>Direct skin-earth contact: free electrons neutralise free radicals, reduce inflammation, normalise cortisol. Walk barefoot 20+ min daily.</p><div class="ct"><span class="tg">electrons</span><span class="tg">cortisol</span></div></div>
+    <div class="sc"><div class="ci">👥</div><h3>Socialising</h3><div class="aka">Human Connection</div><p>Loneliness is as deadly as smoking 15 cigarettes/day. Social connection reduces cortisol, increases oxytocin (the bonding hormone), and strengthens immune function. Populations with the longest lifespans consistently show strong community ties and daily social interaction as a common thread.</p><div class="ct"><span class="tg">oxytocin</span><span class="tg">community</span></div></div>
+    <div class="sc"><div class="ci">☀️</div><h3>Sunbathing</h3><div class="aka">Solar Therapy</div><p>10-15 min sun to small skin area, 2×/week. Drives sulfation, boosts serotonin, circadian rhythm. 90%+ UV penetrates clouds. Added bonus: natural Vitamin D synthesis through the skin — the body's own production pathway, far superior to synthetic D3 supplementation.</p><div class="ct"><span class="tg">sulfation</span><span class="tg">serotonin</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 04 BIOMARKERS -->
+<section class="ps c-blue" id="biomarkers">
+  <div class="sh"><div class="sn">04</div><div class="stg"><div class="sl">Measuring Biological Age</div><h2 class="st">Epigenetic Clocks &amp; Biological Ageing Biomarkers</h2></div></div>
+  <p class="si">You can't optimise what you don't measure. Epigenetic clocks are the gold standard.</p>
+  <div class="co"><h4>Epigenetic Clocks: The Gold Standard</h4><p>DNA methylation-based clocks measure biological age with unprecedented precision. Each captures different dimensions — from drift to mortality prediction to real-time pace.</p></div>
+  <div class="cg">
+    <div class="sc"><div class="ci">🧬</div><h3>Horvath Clock</h3><div class="aka">1st Gen — 353 CpG Sites</div><p>The original (2013). Pan-tissue DNA methylation. Benchmark for all subsequent clocks.</p><div class="ct"><span class="tg">pan-tissue</span></div></div>
+    <div class="sc"><div class="ci">📊</div><h3>DunedinPACE</h3><div class="aka">Real-Time Velocity</div><p>Measures how fast you're ageing NOW. &lt;1.0 = slower. Ideal for tracking interventions.</p><div class="ct"><span class="tg">velocity</span></div></div>
+    <div class="sc"><div class="ci">⚰️</div><h3>GrimAge</h3><div class="aka">2nd Gen — Mortality</div><p>Strongest mortality predictor. Captures smoking, plasma proteins, accumulated damage.</p><div class="ct"><span class="tg">mortality</span></div></div>
+    <div class="sc"><div class="ci">🔬</div><h3>PhenoAge</h3><div class="aka">2nd Gen — Clinical</div><p>Trained on CRP (C-Reactive Protein), albumin, glucose, WBC. Captures immune and metabolic ageing.</p><div class="ct"><span class="tg">clinical</span></div></div>
+  </div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;margin:2.2rem 0 1.3rem">Measuring Biological Ageing — How You Age at a Molecular Level</h3>
+  <div class="cg">
+    <div class="sc"><div class="ci">⚡</div><h3>NAD+ Levels</h3><p>Declines ~50% from 40-60. Impairs sirtuin activity, DNA repair, mitochondrial function.</p></div>
+    <div class="sc"><div class="ci">🧬</div><h3>DNA Methylation</h3><p>Regulates gene expression. Accumulated CpG changes = raw data for epigenetic clocks.</p></div>
+    <div class="sc"><div class="ci">🔬</div><h3>Proteomics</h3><p>Protein expression profiling. Reveals functional state of cells and tissues.</p></div>
+    <div class="sc"><div class="ci">🧪</div><h3>Metabolomics</h3><p>Small molecule profiling. Reveals mitochondrial efficiency, nutrient utilisation, toxin burden.</p></div>
+    <div class="sc"><div class="ci">🍬</div><h3>Glycomics</h3><p>Sugar structure profiling. Glycan patterns change with age and reflect immune/inflammatory status.</p></div>
+    <div class="sc"><div class="ci">🔥</div><h3>Mitochondrial Function</h3><p>ATP output, membrane potential, ROS production — direct measure of cellular energy capacity.</p></div>
+    <div class="sc"><div class="ci">🛡️</div><h3>Immune System Ageing</h3><p>Immunosenescence: T-cell exhaustion, thymic involution, inflammaging.</p></div>
+    <div class="sc"><div class="ci">🔗</div><h3>Telomere Length</h3><p>Shorten with each cell division. Direct replicative age indicator.</p></div>
+    <div class="sc"><div class="ci">🩸</div><h3>HbA1c (Glycated Haemoglobin)</h3><div class="aka">&lt;5.0% = Optimal — Top Longevity Lever</div><p>One of the most underrated biomarkers. Lower HbA1c → less glycation → less inflammation → better insulin sensitivity → improved nutrient partitioning → easier muscle mass → healthier mitochondria → less collagen damage. One of the top feedback loops few speak about.</p><div class="ct"><span class="tg">&lt;5.0%</span><span class="tg">glycation loop</span></div></div>
+    <div class="sc"><div class="ci">📈</div><h3>Functional Biomarkers</h3><p>Grip strength, VO2 max, gait speed, cognitive processing speed, body composition, RHR (Resting Heart Rate), push-ups, one leg stand with eyes closed (making a '4' with your legs), sitting-rising test (no hands), sit-and-reach style flexibility test.</p><div class="ct"><span class="tg">emerging</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 06 BUILDING BLOCKS -->
+<section class="ps c-green" id="building-blocks">
+  <div class="sh"><div class="sn">05</div><div class="stg"><div class="sl">Foundation Layer</div><h2 class="st">Building Blocks</h2></div></div>
+  <p class="si">The structural foundation your body rebuilds from every single day. Without adequate raw materials — protein, collagen, minerals, the right form of vitamin D — no downstream optimisation matters. You cannot build a house without bricks.</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">🏗️</div><h3>Protein</h3><div class="aka">1.2-1.6g/kg lean mass</div><p>Pea protein in particular, and plant protein in general, are the cleanest sources of protein available. Cleaner building blocks → less oxidative damage → less inflammation → better longevity biomarkers. Leucine ~3g/meal activates mTOR (Mechanistic Target of Rapamycin). Primary sarcopenia defence.</p><div class="ct"><span class="tg">mTOR</span><span class="tg">leucine</span></div></div>
+    <div class="sc"><div class="ci">⚡</div><h3>Alpha Lipoic Acid (ALA)</h3><div class="aka">R-form preferred</div><p>Universal antioxidant — water &amp; fat soluble. Recycles C, E, glutathione. Chelates heavy metals. Sulfation donor.</p><div class="ct"><span class="tg">recycler</span><span class="tg">sulfation</span></div></div>
+    <div class="sc"><div class="ci">🧬</div><h3>Collagen</h3><div class="aka">Types I, II, III — 10-15g/day</div><p>Production ↓1%/yr after 25. Glycine, proline, hydroxyproline. Learn to make home quality &amp; purity tests!</p><div class="ct"><span class="tg">skin</span><span class="tg">gut barrier</span></div></div>
+    <div class="sc"><div class="ci">🦴</div><h3>K2 MK-7</h3><div class="aka">Menaquinone-7 — Calcium Director</div><p>Osteocalcin (Ca²⁺ → bones) + matrix-GLA (removes Ca²⁺ from arteries). Without K2, calcium = liability.</p><div class="ct"><span class="tg">calcium traffic</span><span class="tg">arterial</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 07 NUTRITION -->
+<section class="ps c-olive" id="nutrition">
+  <div class="sh"><div class="sn">06</div><div class="stg"><div class="sl">Coloured Nutrients &amp; Superfoods</div><h2 class="st">Nutrition Powerhouses</h2></div></div>
+  <p class="si">Purple, red, and dark blue/black nutrients are king — packed with polyphenols, flavanols, beta-glucans, carotenoids. Consume daily. The amount of healthy fats consumed daily should be 20-35% of total caloric intake (on 2,000 cal/day = 400-800 cal from healthy fats, including omega-3).</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">🟣</div><h3>Purple, Red, Green &amp; Dark Nutrients</h3><div class="aka">Consume Daily</div><p>Purple onions, purple cabbage, purple sweet potatoes, beetroots, watermelon, cherries, tomatoes, raspberries, strawberries, blueberries, blackberries, cocoa powder, kiwis, apples, broccoli, kale, cucumber. Jam-packed with polyphenols, flavanols, anthocyanins, carotenoids, antioxidants.</p><details><summary>Read more: Tomatoes &amp; Lycopene</summary><div class="rm">Lycopene — a carotenoid found abundantly in tomatoes — has several health benefits, and its absorption is boosted when tomatoes are eaten with olive oil. Antioxidant activity: neutralises free radicals, reduces oxidative damage to cells and DNA. Heart health: associated with lower LDL oxidation, improved endothelial function, modest blood pressure reductions. Cancer risk (especially prostate): higher lycopene intake correlates with reduced risk. Eye health: protects against cataracts and age-related macular degeneration. Skin protection: reduces UV-induced erythema, improves skin texture. Anti-inflammatory: lowers CRP in clinical studies. Cooked tomatoes have more bioavailable lycopene — heat breaks it from plant matrices; pairing with olive oil further increases absorption. Practical: 1-2 servings/day of tomato-based foods (e.g. ½-1 cup tomato sauce) with 1 tbsp olive oil. Food lycopene preferred over supplements.</div></details><div class="ct"><span class="tg">polyphenols</span><span class="tg">daily</span></div></div>
+    <div class="sc"><div class="ci">🌰</div><h3>Seeds &amp; Nuts</h3><div class="aka">Most Nutrient-Dense Foods</div><p>Chia, flax, hemp, pumpkin (highest protein/g), macadamia, walnuts, almonds, Brasil nuts, sunflower seeds. Tip: soak seeds and nuts in clean water for up to 12 hours before consumption — removes the coating that impedes absorption, unlocking far more nutrients. Add Celtic salt to the soaking water for extra electrolytes.</p><details><summary>Read more: Soaking Times</summary><div class="rm">Nuts and seeds should be soaked before eating. Phytic acid residue prevents easy processing in the body. Soaking removes this, improving intestinal processing and vitamin/nutrient absorption. Add Celtic salt to remove invisible dust and tannins. <strong>Times:</strong> Walnuts 8h · Almonds 12h · Pecans 8h · Pumpkin seeds 7h · Macadamia 4h · Pine nuts 8h · Hazelnuts 8h · Cashews 6h · Flax seeds 6h · Alfalfa seeds 12h · Broccoli seeds 8h. Change the water every 8 hours.</div></details><div class="ct"><span class="tg">soak 12h</span><span class="tg">Celtic salt</span></div></div>
+    <div class="sc"><div class="ci">🌲</div><h3>Pine Pollen Powder</h3><div class="aka">Nature's Multi-Powerhouse</div><p>200+ bioactive nutrients including amino acids, vitamins, minerals, phyto-androgens. One of few natural sources of DHEA and testosterone-supporting compounds.</p><div class="ct"><span class="tg">testosterone</span><span class="tg">200+ nutrients</span></div></div>
+    <div class="sc"><div class="ci">🥑</div><h3>Key Whole Foods</h3><div class="aka">Avocados, Black Lentils, Eggs</div><p>Avocados: healthy fats, potassium, glutathione precursors. Black lentils: highest protein legume, iron, folate. Eggs: key donor of methyl groups for DNA methylation, complete protein, choline for brain health, lutein/zeaxanthin for eyes, vitamin D, B12.</p><div class="ct"><span class="tg">glutathione</span><span class="tg">melatonin</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 08 GUT HEALTH -->
+<section class="ps c-lime" id="gut">
+  <div class="sh"><div class="sn">07</div><div class="stg"><div class="sl">Microbiome &amp; Gut Integrity</div><h2 class="st">Gut Health</h2></div></div>
+  <p class="si">Elite gut health is not about more supplements. Your small intestine peaks repair in the morning; your colon peaks fermentation at night.</p>
+  <div class="co"><h4>Step 1: Stop the 5 Allergens</h4><p>Industrialised dairy products/derivatives, wheat, oats, peanuts, and refined sugar. Remove these entirely while rebuilding the microbiome.</p></div>
+  <div class="co"><h4>Step 2: Avoid Parasitic Overload</h4><p>Refrain from eating raw fish such as sushi (parasite types: Nematodes and Cestodes) and raw meat (Trichinella Spiralis, Toxoplasma Gondii and various tapeworm species) as much as possible — these contain substantially higher parasites than thoroughly cooked produce. Prolonged contact with most animals (especially wild, but most home pets are equally affected) will also increase your parasitic load.</p></div>
+  <div class="cg">
+    <div class="sc"><div class="ci">🥛</div><h3>Homemade Milk Kefir</h3><div class="aka">100% Raw, Non-Pasteurised, Full Fat</div><p>The gold standard probiotic. Must be from raw, non-pasteurised, full-fat whole milk. Homemade is critical — commercial versions lack diversity.</p><details><summary>Read more: Non-pasteurised</summary><div class="rm">Absolutely avoid ALL pasteurised products (milk, cheese, fruit juices, etc.). As an example, milk is heated at 315°C for 60 minutes, depleting it of any and all nutrients. Ensure you read the labels before you buy — most pasteurised products are laced with toxic chemicals/emulsifiers/binding agents, such as trisodium phosphate and sodium citrate, among others. Emulsifiers are linked to increased inflammation, gut health issues, and cancer risks. Trisodium phosphate directly correlates to kidney stones, calcium excretion from the body, and osteoporosis.</div></details><details><summary>Read more: Making your own Milk Kefir</summary><div class="rm">Learn to make your own Kefir at home! This will require: Fresh, non-pasteurised whole milk, Kefir grains, 1 litre glass jar with lid, nylon strainer, small piece of 100% cotton fabric. As an added bonus, you get 100% natural whey protein as a byproduct out of each Kefir batch you make! Contact us for more details!</div></details><details><summary>Read more: Making your own Whey Protein</summary><div class="rm">You will also get 100% natural whey protein as a byproduct out of each Kefir batch you make. When kefir ferments, it can separate into curds and whey, with the whey (protein) being the liquid portion that remains. This whey is rich in proteins and offers various health benefits — every gym and sports enthusiast/athlete knows just how valuable this is!</div></details><div class="ct"><span class="tg">probiotic</span><span class="tg">biodelivery</span></div></div>
+    <div class="sc"><div class="ci">🥬</div><h3>Kimchi / Sauerkraut / Kombucha</h3><div class="aka">Fermented Foods — Homemade</div><p>Diverse probiotic strains. Homemade ensures live cultures. Kombucha adds organic acids and B vitamins.</p><div class="ct"><span class="tg">fermented</span><span class="tg">homemade</span></div></div>
+    <div class="sc"><div class="ci">🦠</div><h3>Key Cultures</h3><div class="aka">L. Acidophilus &amp; L. Salivarius</div><p>Lactobacillus Acidophilus is the most important — most other cultures are derived from it. Lactobacillus Salivarius is also significant for gut health, particularly immune system shielding and recovery (from cancer, radiation exposure, and other severe ailments). L. Salivarius is found in yogurt, tomatoes, bananas, chicory root, artichokes, garlic, asparagus. Known for growing and spreading very quickly, helping crowd out harmful bacteria.</p><div class="ct"><span class="tg">L. acidophilus</span><span class="tg">L. salivarius</span><span class="tg">immune</span></div></div>
+    <div class="sc"><div class="ci">🍌</div><h3>Prebiotics — Resistant Starch</h3><div class="aka">Green Banana Flour — Evening</div><p>For consistent evening fermentation (colon peaks at night), resistant starch like green banana flour is more reliable than generic fibre recommendations.</p><div class="ct"><span class="tg">evening</span><span class="tg">resistant starch</span></div></div>
+    <div class="sc"><div class="ci">🌿</div><h3>Gut Lining Repair</h3><div class="aka">Slippery Elm &amp; Aloe Vera</div><p>Slippery elm bark coats and soothes. Pure aloe vera contains a natural growth stimulant for rapid gut healing AND a natural probiotic — powerful multifunction tool.</p><div class="ct"><span class="tg">epithelial barrier</span><span class="tg">aloe vera</span></div></div>
+    <div class="sc"><div class="ci">🧄</div><h3>Garlic</h3><div class="aka">Allicin — Prebiotic + Antimicrobial</div><p>Prebiotic fructans feed beneficial bacteria. Allicin and sulfur compounds inhibit harmful bacteria, fungi, and pathogens. Anti-inflammatory for gut lining. Immune support via gut-associated lymphoid tissue. Stimulates digestive secretions.</p><details><summary>Read more</summary><div class="rm">Regular dietary garlic is associated with increased Bifidobacterium and Lactobacillus and decreased pathogens. Typical benefit from culinary amounts (fresh or cooked). Supplements: aged garlic extract or SAC (S-allyl-L-cysteine) garlic capsules (15:1 concentration). Raw garlic has stronger antimicrobial compounds but can cause irritation. Cooking reduces some compounds but preserves prebiotic fibres. IBS/FODMAP-sensitive: use garlic-infused oil (fructans are not oil-soluble) for flavour without triggers. Caution with bleeding disorders, blood thinners, or pre-surgery.</div></details><div class="ct"><span class="tg">prebiotic</span><span class="tg">allicin</span><span class="tg">antimicrobial</span></div></div>
+    <div class="sc"><div class="ci">🕯️</div><h3>Myrrh</h3><div class="aka">Anti-Parasitic + Gut Barrier</div><p>Kills parasites and restores intestinal epithelial barrier integrity after inflammatory damage, decreasing apoptosis in gut lining cells.</p><details><summary>Read more: Research</summary><div class="rm">Published studies: <a href="https://pubmed.ncbi.nlm.nih.gov/38044939" style="color:var(--gold-dim)" target="_blank">pubmed/38044939</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/32664498" style="color:var(--gold-dim)" target="_blank">pubmed/32664498</a></div></details><div class="ct"><span class="tg">anti-parasitic</span><span class="tg">barrier repair</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 09 RECYCLE -->
+<section class="ps c-blue" id="recycle">
+  <div class="sh"><div class="sn">08</div><div class="stg"><div class="sl">Senolytics &amp; Recycling</div><h2 class="st">Rebuild &amp; Recycle</h2></div></div>
+  <p class="si">Clearing senescent cells is prerequisite — other longevity mechanisms can't work in a clogged system. Senolytics selectively destroy "zombie" cells while autophagy inducers recycle their damaged components into raw materials.</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">♻️</div><h3>Spermidine</h3><div class="aka">Autophagy Inducer</div><p>Same pathways as fasting. Wheat germ, aged cheese. Cardioprotective.</p><div class="ct"><span class="tg">autophagy</span></div></div>
+    <div class="sc"><div class="ci">🧹</div><h3>Fisetin</h3><div class="aka">Senolytic</div><p>Clears zombie cells secreting SASP. Periodic high-dose pulses. Neuroprotective.</p><div class="ct"><span class="tg">senolytic</span></div></div>
+    <div class="sc"><div class="ci">🔄</div><h3>Quercetin</h3><div class="aka">NF-κB Inhibitor + Senolytic</div><p>Mast cell stabiliser, anti-histamine. Pair with bromelain for absorption.</p><div class="ct"><span class="tg">NF-κB</span><span class="tg">mast cell</span></div></div>
+    <div class="sc"><div class="ci">🍵</div><h3>EGCG (Epigallocatechin Gallate)</h3><div class="aka">Green Tea Catechin</div><p>AMPK activator, mTOR inhibitor, Nrf2 pathway. Senolytic at high doses. Fat oxidation. BDNF (Brain-Derived Neurotrophic Factor) upregulator.</p><div class="ct"><span class="tg">AMPK</span><span class="tg">Nrf2</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 10 NAD+ -->
+<section class="ps c-purple" id="nad">
+  <div class="sh"><div class="sn">09</div><div class="stg"><div class="sl">NAD+ Repletion &amp; Sirtuin Signalling</div><h2 class="st">NAD+ Pathway</h2></div></div>
+  <p class="si">NAD+ fuels 500+ enzymatic reactions including the SIRT1-7 DNA repair network. Levels decline ~50% between ages 40-60 — crippling the body's ability to repair, regulate, and regenerate. Repletion is the ignition key for the positive feedback loop.</p>
+  <div class="co"><h4>NMN + Trans-Resveratrol Synergy</h4><p>NMN (Nicotinamide Mononucleotide) = fuel (NAD+). Trans-Resveratrol = accelerator (sirtuin activation). Neither works optimally alone. Together: multiplicative effect on DNA repair, epigenetic regulation, mitochondrial function. Trans-Resveratrol enhances SIRT1 activity by inducing allosteric activation, increasing the enzyme's affinity for both NAD+ and its acetylated substrate targets.</p></div>
+  <div class="cg">
+    <div class="sc"><div class="ci">💊</div><h3>NMN (Nicotinamide Mononucleotide)</h3><div class="aka">Salvage Pathway — Direct Precursor</div><p>500-1000mg/day. Sublingual or enteric-coated. Morning dosing.</p><details><summary>Read more</summary><div class="rm">NMN is directly converted to NAD+ through the NMNAT enzyme in the Salvage Pathway. Shown to effectively increase intracellular NAD+ levels in numerous clinical trials, enhancing mitochondrial function, energy production, and the activity of NAD+-dependent enzymes.</div></details><div class="ct"><span class="tg">salvage pathway</span><span class="tg">AM dosing</span></div></div>
+    <div class="sc"><div class="ci">💊</div><h3>NR (Nicotinamide Riboside)</h3><div class="aka">Preiss-Handler Pathway</div><p>Alternative route. Converts to NMN → NAD+. Different kinetics.</p><details><summary>Read more</summary><div class="rm">NR is converted to NAD+ through the Preiss-Handler Pathway. Supports cellular repair, particularly DNA damage response and oxidative stress mitigation. Buttresses NAD+ levels, promoting activation of sirtuins and PARPs, protecting genomic stability and regulating cellular metabolism.</div></details><div class="ct"><span class="tg">Preiss-Handler</span></div></div>
+    <div class="sc"><div class="ci">☕</div><h3>Trigonelline</h3><div class="aka">Fenugreek / Coffee Alkaloid</div><p>New NAD+ precursor — different pathway than NMN/NR. Boosts muscle NAD+.</p><details><summary>Read more</summary><div class="rm">Trigonelline promotes cellular NAD+ production differently than NMN or NR. This methylated form of niacin offers: exceptional stability in the bloodstream, slow release into target tissues, non-flushing, protection against stomach digestion, and direct NAD+ increase in muscle tissues.</div></details><div class="ct"><span class="tg">muscle NAD+</span><span class="tg">slow release</span></div></div>
+    <div class="sc"><div class="ci">🍷</div><h3>Trans-Resveratrol + Sirtuin Signalling</h3><div class="aka">SIRT1-7 Accelerator</div><p>Trans-Resveratrol enhances SIRT1/SIRT2 activity — the DNA repair enzymes. Take with fat for absorption. Seven sirtuin enzymes (SIRT1-7) regulate DNA repair, epigenetic marks, mitochondrial function, inflammation, stress resistance. All require NAD+ as fuel.</p><details><summary>Hints &amp; Tips</summary><div class="rm">Take Trans-Resveratrol with healthy fats (such as homemade kefir or homemade Greek yogurt) to increase absorption by up to 90%.</div></details><div class="ct"><span class="tg">SIRT1</span><span class="tg">NMN synergy</span><span class="tg">take with fat</span></div></div>
+  </div>
+  <div class="co" style="margin-top:1.5rem"><h4>Why Different NAD+ Precursors?</h4><p>Different organs and tissues use different NAD+ precursor conversion pathways (Salvage for NMN, Preiss-Handler for NR). Trigonelline provides outstanding stability in the bloodstream, slow release, non-flushing, stomach protection, and direct muscle NAD+ increase. Using multiple precursors ensures comprehensive NAD+ repletion across all tissue types.</p></div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 11 MITO -->
+<section class="ps c-purple" id="mito">
+  <div class="sh"><div class="sn">10</div><div class="stg"><div class="sl">Biogenesis &amp; Energy</div><h2 class="st">Mitochondrial Function</h2></div></div>
+  <p class="si">Your biological age is fundamentally your mitochondrial age. When mitochondria degrade, energy drops and ROS spike — ageing accelerates from the inside out. PGC-1α activation creates new mitochondria; copper completes the final step of ATP production.</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">💎</div><h3>Methylene Blue</h3><div class="aka">Alternative Electron Carrier</div><p>Bypasses damaged Complex I &amp; III in the ETC (Electron Transport Chain). 0.5-2mg/kg. Neuroprotective.</p><div class="ct"><span class="tg">ETC bypass</span></div></div>
+    <div class="sc"><div class="ci">🔥</div><h3>PQQ (Pyrroloquinoline Quinone)</h3><div class="aka">Mitobiogenesis — PGC-1α</div><p>Creates NEW mitochondria. Redox cofactor cycling 20,000×.</p><div class="ct"><span class="tg">PGC-1α</span></div></div>
+    <div class="sc"><div class="ci">❤️</div><h3>CoQ10 / Ubiquinol</h3><div class="aka">Complex III Electron Shuttle</div><p>Heart has highest mito density. Ubiquinol 8× more bioavailable. Statin users depleted.</p><div class="ct"><span class="tg">cardiac</span><span class="tg">statin antidote</span></div></div>
+    <div class="sc"><div class="ci">🔶</div><h3>Copper → Cytochrome C Oxidase</h3><div class="aka">Complex IV — ATP Final Step</div><p>Copper's MOST critical role: forming cytochrome c oxidase (Complex IV). Without copper = no ATP = cells die. The 3:1 Zinc-to-Copper ratio is CRITICAL — excess zinc depletes copper, crippling energy. Always supplement zinc and copper together at 3:1.</p><div class="ct"><span class="tg">Complex IV</span><span class="tg">Zn:Cu 3:1 CRITICAL</span></div></div>
+    <div class="sc"><div class="ci">🧪</div><h3>CaAKG (Calcium Alpha-Ketoglutarate)</h3><div class="aka">Krebs Cycle Intermediate</div><p>Energy production, collagen synthesis, epigenetic modulation. Lifespan extension in animals. Anti-inflammaging.</p><div class="ct"><span class="tg">Krebs</span><span class="tg">epigenetic</span></div></div>
+    <div class="sc"><div class="ci">💊</div><h3>B Vitamins + Magnesium</h3><div class="aka">Essential Cofactors</div><p>B1/B2/B3/B5 for the ETC (Electron Transport Chain) and Krebs cycle (citric acid cycle — the central metabolic pathway generating ATP precursors). Mg for 300+ enzymes. See <a href="#magnesium" style="color:var(--gold-dim)">Magnesium</a> section.</p><div class="ct"><span class="tg">ETC</span><span class="tg">Krebs cycle</span></div></div>
+    <div class="sc"><div class="ci">🌼</div><h3>Dihydroberberine</h3><div class="aka">Natural Metformin Replacement</div><p>Longevity athletes are discovering how deep the Metformin rabbit hole goes — new mitochondria it generates cannot be utilised due to Metformin's own actions. Dihydroberberine provides AMPK and blood sugar benefits without mitochondrial sabotage.</p><div class="ct"><span class="tg">AMPK</span><span class="tg">replaces Metformin</span></div></div>
+    <div class="sc"><div class="ci">🍇</div><h3>Urolithin A</h3><div class="aka">Mitophagy Activator — Polyphenol Metabolite</div><p>A bioactive compound (ellagitannin) that stimulates mitophagy — mitochondrial autophagy — helping clear out and replace damaged or dysfunctional mitochondria. Recent studies show urolithin A improves endurance performance and keeps immune cells "younger" with age. Derived from pomegranates, raspberries, strawberries, almonds, and walnuts.</p><details><summary>Read more</summary><div class="rm">The Fusion Protocol already supplements with urolithin A food sources (raspberries, strawberries, almonds, walnuts). However, additional supplementation may be required, as nutrient density and purity can potentially be higher than what is provided via nutrition alone. The gut microbiome must convert ellagitannins to urolithin A — not everyone's microbiome does this efficiently, making direct supplementation valuable. Requires further investigation and subsequent testing for individual response.</div></details><div class="ct"><span class="tg">mitophagy</span><span class="tg">ellagitannin</span><span class="tg">endurance</span><span class="tg">immune</span></div></div>
+  </div>
+  <div class="co" style="margin-top:1.5rem"><h4>Mitochondrial Nutrients — Therapeutic Doses</h4><p>Alpha Lipoic Acid: 400-1,200 mg/day · Iron: 10-35 mg/day · Manganese: 400-1,200 mg/day · Copper: 6-30 mg/day · CaAKG (Calcium Alpha-Ketoglutarate): 300-600 mg/day (non-athletic), 1,000-5,000 mg/day (athletic) · Magnesium: 800-1,500 mg/day · B1: 20-100 mg/day · B2: 15-75 mg/day · B3: 100-200 mg/day · B5: 100-400 mg/day · CoQ10 (Coenzyme Q10): 100-400 mg/day · Nattokinase: 10,800 FU+ per day · Chlorella (Chlorophyll): 300-4,000 mg/day.</p></div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 12 ANTIOXIDANTS -->
+<section class="ps c-amber" id="antioxidants">
+  <div class="sh"><div class="sn">11</div><div class="stg"><div class="sl">Defence Shield</div><h2 class="st">Antioxidant Pathways</h2></div></div>
+  <p class="si">Master antioxidants neutralise the ROS generated by mitochondrial respiration, environmental toxins, and inflammatory cascades. NACET represents the cutting edge — lipophilic, BBB-permeable, and potentially 20× more bioavailable than standard NAC.</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">🛡️</div><h3>NACET</h3><div class="aka">N-Acetyl-L-Cysteine Ethyl Ester</div><p>Lipophilic NAC ester. Crosses BBB (Blood-Brain Barrier) and cell membranes. Directly replenishes glutathione (GSH). Feeds sulfation. Use ethyl esters for NAC delivery.</p><details><summary>Read more</summary><div class="rm">The ethyl esterification renders NACET neutral and lipophilic, allowing passive diffusion across cell membranes — unlike NAC which relies on saturable transporters. Crosses BBB and ocular barriers. Inside cells, rapidly hydrolysed to release NAC → cysteine → GSH synthesis. Significantly enhances intracellular GSH in human cells including HUVECs (umbilical vein endothelial cells) and RPE (retinal pigment epithelial) cells, more effectively than NAC. In oxidative-stressed RPE cells, increases viability and can precondition cells to resist future oxidative stress. At least 60% bioavailability in rats, potentially 20× more bioavailable than NAC in humans (NAC oral bioavailability = only 4-10%). Increases circulating H₂S (hydrogen sulfide) levels — benefits for mitochondria, neurological health, blood pressure, blood vessels. Protects keratinocytes from UV, acts as direct protector against hydroperoxide-induced damage, protects against paracetamol liver damage. Being explored as substitute for NAC in mucolytic therapy, antioxidant support, and paracetamol antidote. Boosts GSH by at least 2× in multiple human cell lines. Higher tissue penetration (even brain), stronger glutathione boosting, more effective oxidative stress protection. No published human clinical trials yet — potential predicted superior to NAC. Available as research chemical and in dietary supplements, often combined with glycine and selenium to further support glutathione synthesis.</div></details><div class="ct"><span class="tg">GSH</span><span class="tg">BBB</span><span class="tg">20× NAC</span></div></div>
+    <div class="sc"><div class="ci">🦩</div><h3>Astaxanthin</h3><div class="aka">6000× Vitamin C</div><p>Most powerful carotenoid. Spans cell membranes. UV, retinal, endothelial protection. Exercise recovery.</p><div class="ct"><span class="tg">membrane-spanning</span></div></div>
+    <div class="sc"><div class="ci">🍵</div><h3>Glutathione (Liposomal)</h3><div class="aka">GSH — Master Antioxidant</div><p>Liposomal encapsulation bypasses digestion. Master detoxifier and AO recycler.</p><div class="ct"><span class="tg">liposomal</span></div></div>
+    <div class="sc"><div class="ci">🌙</div><h3>Melatonin</h3><div class="aka">Mitochondrial AO + Radiation Shield</div><p>Scavenges ROS inside mitochondria. 100mg taken 4h before MRI/X-ray/ultrasound shields from radiation.</p><div class="ct"><span class="tg">mito ROS</span><span class="tg">radiation</span></div></div>
+    <div class="sc"><div class="ci">🍊</div><h3>Liposomal Vitamin C</h3><div class="aka">Ascorbic Acid — Must Be Liposomal</div><p>Must be liposomal delivery for meaningful absorption. Regenerates vitamin E, supports collagen synthesis, enhances iron absorption, boosts immune function (white blood cell production), protects against UV damage, supports adrenal function under stress. A foundational electron donor that recycles other antioxidants. Standard oral vitamin C has very low bioavailability — liposomal encapsulation bypasses this limitation.</p><div class="ct"><span class="tg">liposomal</span><span class="tg">electron donor</span><span class="tg">collagen</span></div></div>
+    <div class="sc"><div class="ci">🔶</div><h3>Selenium</h3><div class="aka">Essential Trace Mineral</div><p>Essential cofactor for glutathione peroxidase (GPx) — the enzyme that makes glutathione work. Without selenium, glutathione cannot neutralise peroxides. Also critical for thyroid function (deiodinase enzymes convert T4→T3), DNA synthesis, fertility (sperm motility), and immune response. Deficiency linked to Keshan disease, cognitive decline, and increased cancer risk. Brazil nuts are the richest food source (1-2 nuts/day provides RDA).</p><div class="ct"><span class="tg">GPx</span><span class="tg">thyroid T4→T3</span><span class="tg">fertility</span></div></div>
+    <div class="sc"><div class="ci">🟡</div><h3>Benfotiamine (B1)</h3><div class="aka">Fat-Soluble — Blocks AGEs (Advanced Glycation End-products)</div><p>Highly bioavailable B1. Anti-glycation agent. Example of choosing superior bioavailable forms.</p><div class="ct"><span class="tg">anti-AGE</span></div></div>
+    <div class="sc"><div class="ci">🟠</div><h3>Curcumin BCM-95</h3><div class="aka">7× Bioavailability — Nature's Multi-Pathway Defender</div><p>The BCM-95 formulation delivers 7× the absorption of standard curcumin. It calms the body's main inflammatory switch (NF-κB), reduces pain signals (COX-2), and activates the cell's own defence system (Nrf2). Modulates over 100 biological pathways — one of the most versatile natural compounds in the entire protocol.</p><div class="ct"><span class="tg">NF-κB</span><span class="tg">Nrf2</span><span class="tg">100+ pathways</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 13 CARDIO -->
+<section class="ps c-red" id="cardio">
+  <div class="sh"><div class="sn">12</div><div class="stg"><div class="sl">Heart &amp; Metabolism</div><h2 class="st">Cardio-Metabolic</h2></div></div>
+  <p class="si">CVD (Cardiovascular Disease) remains the #1 killer worldwide. These compounds target the heart's extraordinary energy demands, vascular tone, clot prevention, blood viscosity, and the osmolytes that keep every cell properly hydrated.</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">❤️</div><h3>Nattokinase</h3><div class="aka">Fibrinolytic Enzyme from Natto</div><p>Natural fibrin-dissolving enzyme from fermented soy. Reduces blood viscosity, improves flow, prevents platelet aggregation. Biological alternative to pharmaceutical blood thinners with favourable safety profile. Works on both arterial and venous clots.</p><div class="ct"><span class="tg">fibrinolysis</span><span class="tg">anti-clot</span><span class="tg">viscosity</span></div></div>
+    <div class="sc"><div class="ci">🫀</div><h3>Taurine</h3><div class="aka">Osmolyte + Anti-Ageing Driver</div><p>2023 Science: deficiency drives ageing across species. Osmolyte (with creatine), membrane stabiliser, cardiac Ca²⁺ regulator, sulfation donor. One of the most abundant amino acids in human colostrum.</p><details><summary>Read more</summary><div class="rm">Blocks AGEs. Morning wood improvement. Lowers CRH &amp; ACTH (stress hormones). Improves endothelial function. May alleviate fatty liver disease. Improves OCD &amp; ADHD symptoms. Prevents glutamate excitotoxicity. Protects thyroid from fluoride, brain from fluoride toxicity, kidneys from cadmium, testes from microplastics, heart from chemo drugs, neurons from MSG, DNA from radiation damage, liver from alcohol toxicity. Regulates blood pressure (up and down). Makes bile salts (needed to digest fat). Promotes brain stem cell differentiation. Crucial for neurotransmitter &amp; neural stability. Incredible for insomnia, depression &amp; anxiety. Improves insulin sensitivity at receptor level. Rescues memory in lead-exposed brains. Synergises with myo-inositol. Keeps mitochondria efficient under stress. Makes aspirin's blood-thinning more effective. Tremendous anti-inflammatory and neuro anti-inflammatory. Directly supports neurogenesis &amp; is neurotrophic. Signals hypothalamus to lower sympathetic nerve activity. Binds GABA/A, GABA/B &amp; glycine receptors — very inhibitory, contrary to energy drink marketing, it relaxes you. Builds the retina — photoreceptors degenerate without it, prevents blue light damage. Increases androgen sensitivity, boosts AR expression, enhances LH receptor signalling, increases testosterone in Leydig cells, restores sperm motility under oxidative stress.</div></details><div class="ct"><span class="tg">osmolyte</span><span class="tg">cardiac</span><span class="tg">colostrum</span></div></div>
+    <div class="sc"><div class="ci">💪</div><h3>Creatine</h3><div class="aka">Osmolyte + ATP Buffer</div><p>Critical osmolyte, phosphate donor for rapid ATP regeneration, neuroprotective. Stored as phosphocreatine. 3-5g daily. Synergistic with taurine as osmotic pair. Outstanding safety record — "Generally Recognized As Safe" by FDA.</p><details><summary>Read more</summary><div class="rm">Supports muscle even without exercise — older adults maintained strength despite reduced activity over 32 weeks. Enhances bone strength/density — counters osteoporosis risk (6-12 months + training). Improves cognition and memory (healthy older adults, early Alzheimer's, sleep deprivation). 2025 review: increases lean mass, muscle size, functional ability in older adults. Supports women's health across menstrual cycle, pregnancy, and menopause. Aids recovery from injury/surgery — reduced muscle loss, improved function. May shorten brain injury recovery. Hundreds of trials confirm safety. Timing doesn't matter — consistency does. Works even without exercise (better with). Caffeine doesn't cancel effects. Doesn't cause dehydration, raise BP, or harm fertility. May aid recovery after surgery, injury, or concussion. Serves as backup power: recycles ATP for muscular contraction and cellular reactions.</div></details><div class="ct"><span class="tg">osmolyte</span><span class="tg">neuro</span><span class="tg">3-5g daily</span></div></div>
+    <div class="sc"><div class="ci">🌶️</div><h3>Cayenne Pepper</h3><div class="aka">Capsaicin — TRPV1 Agonist</div><p>TRPV1 → thermogenesis, NO (Nitric Oxide) production, endothelial function. Reduced CV mortality. Anti-platelet. Improves blood viscosity.</p><div class="ct"><span class="tg">NO</span><span class="tg">thermogenesis</span></div></div>
+    <div class="sc"><div class="ci">🍎</div><h3>Apple Cider Vinegar</h3><div class="aka">The ACV Trick</div><p>1-2 teaspoons before meals. Reduces carbohydrate absorption by 30% (handy when you know you're going to stuff yourself). Improves insulin sensitivity, reduces glucose spikes, supports gut. Improves HbA1c over time.</p><div class="ct"><span class="tg">30% carb block</span><span class="tg">insulin</span></div></div>
+    <div class="sc"><div class="ci">🌱</div><h3>Fenugreek Seeds</h3><div class="aka">Blood Sugar + Hormonal + Detox</div><p>Significantly reduces blood glucose and HbA1c (Glycated Haemoglobin) levels. Enhances heart health, improves digestion, promotes weight loss, supports kidney health (flushes toxins), improves hair growth and skin health, relieves menstrual cramps, boosts testosterone, strengthens immunity, improves liver function, relieves arthritis pain, helps prevent anaemia, supports respiratory health, improves cognitive health, reduces acid reflux, balances hormones, enhances male fertility, improves insulin sensitivity, detoxes microplastics.</p><div class="ct"><span class="tg">HbA1c</span><span class="tg">testosterone</span><span class="tg">microplastics</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 14 ANTI-INFLAMMATORIES -->
+<section class="ps c-teal" id="anti-inflammatories">
+  <div class="sh"><div class="sn">13</div><div class="stg"><div class="sl">Inflammation Control — Compounds</div><h2 class="st">Anti-Inflammatories</h2></div></div>
+  <p class="si">Compounds that actively reduce chronic inflammation across multiple pathways.</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">🔄</div><h3>Quercetin</h3><p>NF-κB (Nuclear Factor kappa-B) inhibitor, mast cell stabiliser, senolytic. Pair with bromelain.</p><details><summary>Read more</summary><div class="rm">Most people don't notice low-grade inflammation until it compounds. Conventional approaches suppress symptoms without addressing what's driving them. Your inflammatory pathways keep firing underneath — without addressing NF-κB signalling and oxidative stress, the immune system stays in low-grade activation. The result: dependency, rebound, and accumulated cellular strain. Quercetin works at the source, modulating the pathways that drive inflammation. Liposomal Quercetin is a cellular regulator — supporting energy, immunity, and redox balance where it actually starts. Quick stats: 36% reduction in upper respiratory infection severity. 52% faster symptom resolution vs control. NF-κB modulated. Mast cells stabilised. Mitochondria recover via AMPK (AMP-activated Protein Kinase) activation. Redox balance restored.</div></details><div class="ct"><span class="tg">NF-κB</span></div></div>
+    <div class="sc"><div class="ci">🟡</div><h3>Benfotiamine</h3><p>Blocks AGE formation. Anti-glycation. Fat-soluble B1.</p><div class="ct"><span class="tg">anti-AGE</span></div></div>
+    <div class="sc"><div class="ci">🌙</div><h3>Melatonin</h3><p>Mitochondrial antioxidant with potent anti-inflammatory properties.</p><div class="ct"><span class="tg">mito</span></div></div>
+    <div class="sc"><div class="ci">🟤</div><h3>Ceylon Cinnamon</h3><p>Reduces CRP, improves insulin sensitivity, anti-microbial. Ceylon (not Cassia) to avoid coumarin toxicity.</p><div class="ct"><span class="tg">CRP</span><span class="tg">insulin</span></div></div>
+    <div class="sc"><div class="ci">🫀</div><h3>Taurine</h3><p>Tremendous anti-inflammatory and neuro anti-inflammatory. Signals hypothalamus to lower sympathetic activity.</p><div class="ct"><span class="tg">neuro</span></div></div>
+    <div class="sc"><div class="ci">🟠</div><h3>Curcumin BCM-95</h3><p>Nature's multi-pathway defender. Calms the body's main inflammatory switch, reduces pain signals, and activates the cell's own defence system. Over 100 biological pathways modulated.</p><div class="ct"><span class="tg">NF-κB</span><span class="tg">COX-2</span></div></div>
+    <div class="sc"><div class="ci">💎</div><h3>Boron (3-9mg/day)</h3><p>Reduces CRP (C-Reactive Protein), TNF-α (Tumour Necrosis Factor alpha). Bone density. Vitamin D utilisation.</p><div class="ct"><span class="tg">CRP</span><span class="tg">TNF-α</span></div></div>
+    <div class="sc"><div class="ci">🖤</div><h3>Black Seed Oil</h3><div class="aka">Egyptian, Unrefined, Cold-Pressed, Min 2.5-3% Thymoquinone</div><p>Thymoquinone: immunomodulator. Reduces CRP/IL-6 (Interleukin-6). Liver detox.</p><details><summary>Read more: Black Seed Oil</summary><div class="rm"><strong>Cellular benefits:</strong> Improves mitochondrial membrane potential, reduces oxidised LDL and small dense LDL particles, anti-candida properties, inhibits neuroinflammation via NF-κB pathways, speeds wound healing by increasing fibroblast activity, thymoquinone influences histone acetylation and DNA methylation, reduces proteinuria in chronic kidney disease models, improves creatinine clearance, protects against drug-induced nephrotoxicity (gentamicin, cisplatin). <strong>Liver regeneration:</strong> Stimulates hepatic antioxidant enzymes (glutathione, catalase), helps reverse fatty liver (NAFLD), protects against alcohol/toxin-induced liver injury, activates protective genes (Nrf2), silences inflammatory genes (NF-κB), reduces AGE formation, slows skin and vascular ageing. Rich in antioxidants and essential fatty acids including oleic acid.</div></details><div class="ct"><span class="tg">thymoquinone</span></div></div>
+    <div class="sc"><div class="ci">🥥</div><h3>C8 MCT Oil</h3><p>Ketone-producing anti-inflammatory. Reduces neuroinflammation via BHB (beta-hydroxybutyrate).</p><div class="ct"><span class="tg">ketones</span><span class="tg">BHB</span></div></div>
+    <div class="sc"><div class="ci">🧪</div><h3>CaAKG</h3><p>Krebs cycle intermediate. Modulates inflammatory signalling. Anti-inflammaging.</p><div class="ct"><span class="tg">Krebs</span></div></div>
+    <div class="sc"><div class="ci">🍈</div><h3>Papaya Seeds</h3><p>Anti-parasitic. P450 activator. Take fasted as proteolytic enzyme.</p><div class="ct"><span class="tg">P450</span></div></div>
+    <div class="sc"><div class="ci">🥒</div><h3>Cucumber</h3><p>Anti-inflammatory, hydrating, alkalising. Rich in fisetin. Supports skin and joints.</p><div class="ct"><span class="tg">fisetin</span><span class="tg">alkalising</span></div></div>
+    <div class="sc"><div class="ci">🌿</div><h3>Oregano Oil</h3><p>Carvacrol: NF-κB inhibitor, antimicrobial. Gut dysbiosis.</p><div class="ct"><span class="tg">carvacrol</span></div></div>
+    <div class="sc"><div class="ci">🫙</div><h3>Castor Oil</h3><p>Topical: ricinoleic acid, lymphatic drainage, liver support, anti-inflammatory.</p><div class="ct"><span class="tg">lymphatic</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 15 INFLAMMATION VECTORS -->
+<section class="ps c-rose" id="inflammation-vectors">
+  <div class="sh"><div class="sn">14</div><div class="stg"><div class="sl">What Drives Inflammaging</div><h2 class="st">Inflammation Vectors</h2></div></div>
+  <p class="si">The measurable markers and mechanisms driving "inflammaging" — the chronic, low-grade inflammation that disrupts DNA repair and silently accelerates ageing across every tissue in the body. &ldquo;Know thy enemy and you will always be victorious.&rdquo; &mdash; Sun Tzu</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">🔥</div><h3>ROS (Reactive Oxygen Species)</h3><div class="aka">Primary Vector</div><p>Mitochondrial dysfunction + toxins → excess ROS → DNA damage, lipid peroxidation, protein oxidation. All antioxidant and mitochondrial strategies target this.</p><div class="ct"><span class="tg">primary vector</span></div></div>
+    <div class="sc"><div class="ci">🩸</div><h3>CRP (C-Reactive Protein)</h3><div class="aka">Systemic Inflammation Marker</div><p>Produced by the liver in response to inflammation. High-sensitivity CRP (hs-CRP) &lt;1.0 mg/L = optimal. Elevated CRP predicts CV events and all-cause mortality.</p><div class="ct"><span class="tg">systemic</span><span class="tg">&lt;1.0 mg/L</span></div></div>
+    <div class="sc"><div class="ci">🧬</div><h3>IL-6 (Interleukin-6)</h3><div class="aka">Pro-Inflammatory Cytokine</div><p>Key signal in the inflammaging cascade. Stimulates CRP production. Elevated in obesity, stress, and ageing. Drives muscle wasting and insulin resistance.</p><div class="ct"><span class="tg">cytokine</span><span class="tg">CRP driver</span></div></div>
+    <div class="sc"><div class="ci">💀</div><h3>TNF-α (Tumour Necrosis Factor)</h3><div class="aka">Tissue Damage Driver</div><p>Promotes cell death, drives NF-κB activation, and amplifies inflammatory cascades. Central to autoimmune and chronic inflammatory conditions.</p><div class="ct"><span class="tg">NF-κB</span><span class="tg">autoimmune</span></div></div>
+    <div class="sc"><div class="ci">🍬</div><h3>AGEs (Advanced Glycation End-products)</h3><div class="aka">Glycation → Cross-Linking</div><p>Formed when sugars bind to proteins/lipids. Accumulate with age and high blood sugar. Cause tissue cross-linking, stiffening, and chronic inflammation. Tracked via HbA1c.</p><div class="ct"><span class="tg">glycation</span><span class="tg">HbA1c</span></div></div>
+    <div class="sc"><div class="ci">🧟</div><h3>SASP (Senescence-Associated Secretory Phenotype)</h3><div class="aka">Zombie Cell Secretions</div><p>Senescent cells secrete inflammatory cytokines, chemokines, and proteases that damage neighbouring healthy cells and tissue. Senolytics (fisetin, quercetin) clear these cells.</p><div class="ct"><span class="tg">zombie cells</span><span class="tg">senolytics</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 16 OILS -->
+<section class="ps c-olive" id="oils">
+  <div class="sh"><div class="sn">15</div><div class="stg"><div class="sl">Lipid Architecture</div><h2 class="st">Oils &amp; Fatty Acids</h2></div></div>
+  <p class="si">ALL oils must be non-synthetic. Healthy fats = 20-35% of daily calories. Primary defence against neurodegenerative disease. Learn home purity tests!</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">🫒</div><h3>Green EVOO (Extra Virgin Olive Oil)</h3><div class="aka">'Green' = extracted from recent crop (same year or months prior) · Unfiltered · Non-Synthetic · 3-4 tbsp/day</div><p>Oleocanthal (natural ibuprofen) + hydroxytyrosol + oleuropein. Mediterranean cornerstone. Neuroprotective.</p><details><summary>Read more</summary><div class="rm">Not all extra virgin olive oil is created equal. The true neuroprotective power lies in specific, high-polyphenol varieties — not generic mass-produced synthetic oil. These polyphenols combat the two primary drivers of brain ageing: oxidative stress and chronic inflammation. Your brain is particularly vulnerable to oxidative damage due to its high fat content. High in monounsaturated fats (oleic acid) — lowers LDL, raises HDL. Rich in antioxidants (hydroxytyrosol, oleuropein) reducing oxidative stress. Anti-inflammatory: lowers CRP (C-Reactive Protein), IL-6 (Interleukin-6). Cardiovascular protection: lower heart disease risk, improved endothelial function, reduced blood pressure. Improves blood sugar control and insulin sensitivity. Supports cognitive function, digestive health, bile flow, fat-soluble nutrient absorption. Antimicrobial properties. Skin and hair benefits topically. Tips: use as replacement for saturated fats and refined vegetable oils. Best consumed raw or at low-medium heat. Typical intake: 1-2 tablespoons (15-30ml) daily.</div></details><div class="ct"><span class="tg">oleocanthal</span><span class="tg">neuroprotective</span></div></div>
+    <div class="sc"><div class="ci">🥥</div><h3>C8 MCT Oil + Coconut Oil</h3><div class="aka">Non-Synthetic Only</div><p>C8: direct-to-ketone, brain fuel, metabolic flexibility. Coconut: lauric acid antimicrobial, thyroid. Non-synthetic only.</p><div class="ct"><span class="tg">ketones</span><span class="tg">non-synthetic</span></div></div>
+    <div class="sc"><div class="ci">🐟</div><h3>Omega-3 EPA/DHA</h3><div class="aka">Index 8-12%</div><p>EPA → SPMs (Specialised Pro-Resolving Mediators). DHA = 40% brain fatty acids. Rebalance omega-6:3 ratio.</p><div class="ct"><span class="tg">SPMs</span><span class="tg">neuronal</span></div></div>
+    <div class="sc"><div class="ci">🐻</div><h3>Cod Liver Oil</h3><div class="aka">Non-Synthetic · Omega-3 + A &amp; D</div><p>Traditional complete package. Non-synthetic. Learn home purity tests!</p><div class="ct"><span class="tg">vitamin A</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 17 NEURO -->
+<section class="ps c-indigo" id="neuro">
+  <div class="sh"><div class="sn">16</div><div class="stg"><div class="sl">Neurogenesis &amp; BDNF</div><h2 class="st">Brain &amp; Cognitive</h2></div></div>
+  <p class="si">BDNF (Brain-Derived Neurotrophic Factor) drives neurogenesis — the birth of new neurons — and strengthens synaptic connections. Declining BDNF is the common thread linking depression, cognitive decline, and neurodegeneration. Healthy fatty acids (EVOO, C8 MCT, coconut oil, omega-3 DHA/EPA) are the primary structural defence.</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">🍄</div><h3>Lion's Mane</h3><div class="aka">PURE Fruiting Body Extract Only</div><p>Stimulates NGF (Nerve Growth Factor) + BDNF. Neurogenesis, remyelination. MUST be pure fruiting bodies — not mycelium on grain.</p><div class="ct"><span class="tg">NGF</span><span class="tg">BDNF</span></div></div>
+    <div class="sc"><div class="ci">🫒</div><h3>EVOO + Coconut Oil</h3><div class="aka">Brain Fatty Acids</div><p>EVOO: oleocanthal reduces neuroinflammation, hydroxytyrosol protects neurons. Coconut oil: C8 MCT-derived ketones provide alternative brain fuel when glucose metabolism is impaired (Alzheimer's). DHA (from omega-3) = 40% of brain fatty acid composition.</p><div class="ct"><span class="tg">oleocanthal</span><span class="tg">ketone fuel</span><span class="tg">DHA</span></div></div>
+    <div class="sc"><div class="ci">🌿</div><h3>Ayahuasca</h3><div class="aka">DMT + MAOi</div><p>Powerful BDNF upregulator. Dendritic growth. Millennia ceremonial. Depression, PTSD. Requires guidance.</p><div class="ct"><span class="tg">BDNF</span><span class="tg">ceremonial</span></div></div>
+    <div class="sc"><div class="ci">🐸</div><h3>Bufo Alvarius</h3><div class="aka">5-MeO-DMT</div><p>Most potent serotonergic psychedelic. Profound neuroplasticity. Lasting single-session benefits.</p><div class="ct"><span class="tg">5-MeO-DMT</span></div></div>
+    <div class="sc"><div class="ci">🍄</div><h3>Psilocybin</h3><div class="aka">5-HT2A Agonist</div><p>BDNF, dendritic spine growth, DMN (Default Mode Network) dissolution. Micro (0.1-0.3g) or macro.</p><div class="ct"><span class="tg">BDNF</span><span class="tg">DMN</span></div></div>
+    <div class="sc"><div class="ci">🧠</div><h3>5-HTP (5-Hydroxytryptophan)</h3><div class="aka">Serotonin → Melatonin Pipeline</div><p>Direct precursor to serotonin. Low serotonin → cortisol → systemic inflammation → cognitive decline. 50-200mg PM dosing. Pair with B6 for conversion. Serotonin is also the precursor to melatonin — linking mood, sleep, and antioxidant defence in one pipeline.</p><div class="ct"><span class="tg">serotonin</span><span class="tg">melatonin</span><span class="tg">B6</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 18 MAGNESIUM -->
+<section class="ps c-lime" id="magnesium">
+  <div class="sh"><div class="sn">17</div><div class="stg"><div class="sl">The Master Mineral</div><h2 class="st">Magnesium — Types &amp; Cycling Absorption Routes</h2></div></div>
+  <p class="si">A significant magnesium deficiency causes some diseases and makes ALL diseases worse. Taking as much Mg supplementation as can be readily tolerated is always a good idea. 300+ enzymatic reactions. Use several types daily, cycle routes.</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">🌅</div><h3>Sucrosomial</h3><div class="aka">AM — Superior Absorption</div><p>Lipid-coated. No GI distress. Best for raising levels fast.</p><div class="ct"><span class="tg">AM</span><span class="tg">oral</span></div></div>
+    <div class="sc"><div class="ci">🍏</div><h3>Malate</h3><div class="aka">Krebs Cycle · Energy</div><p>Malic acid = Krebs intermediate. Energy and fibromyalgia. Daytime.</p><div class="ct"><span class="tg">energy</span></div></div>
+    <div class="sc"><div class="ci">❤️</div><h3>Taurate</h3><div class="aka">PM — Cardiac</div><p>Mg + taurine double benefit. Cardiac rhythm. Evening.</p><div class="ct"><span class="tg">PM</span><span class="tg">cardiac</span></div></div>
+    <div class="sc"><div class="ci">🧠</div><h3>Glycinate</h3><div class="aka">PM — Relaxation</div><p>Glycine enhances GABA. No laxative. Evening dosing.</p><div class="ct"><span class="tg">PM</span><span class="tg">GABA</span></div></div>
+    <div class="sc"><div class="ci">🧠</div><h3>L-Threonate</h3><div class="aka">Best for Brain &amp; Sleep</div><p>Only form proven to cross BBB and increase brain Mg levels. Best for cognitive support and sleep quality. The brain-specific form.</p><div class="ct"><span class="tg">BBB</span><span class="tg">brain</span><span class="tg">best sleep</span></div></div>
+    <div class="sc"><div class="ci">🧴</div><h3>Chloride</h3><div class="aka">Transdermal — Skin</div><p>Topical spray. Bypasses GI (Gastrointestinal) tract. Rapid skin absorption. Muscle relief.</p><details><summary>Read more: Topical spray</summary><div class="rm">Make your own Magnesium Chloride topical spray at home! Get hold of an empty 1 litre spraying bottle (similar to manual plant sprayers). Next, buy some Magnesium Chloride (normally comes in fine powder). Pour just under 1 litre of purified/filtered water on a container (preferably stainless steel) and mix 9 or 10 teaspoons of Magnesium Chloride (stir well to fully dissolve in the water). Now, simply pour the water + Mag Chloride solution into the spraying bottle. Every day, just after your shower, dry yourself with a towel, and then spray your whole body at will — the Magnesium will be fully absorbed transdermally, bypassing the GI (Gastrointestinal) tract.</div></details><div class="ct"><span class="tg">transdermal</span></div></div>
+    <div class="sc"><div class="ci">🛁</div><h3>Epsom Salts (MgSO₄)</h3><div class="aka">Bath + Sulfation</div><p>Transdermal via bath. Sulfate feeds sulfation pathways. 20 min, 2-3×/wk.</p><div class="ct"><span class="tg">bath</span><span class="tg">sulfation</span></div></div>
+  </div>
+  <div class="co" style="margin-top:1.3rem"><h4>Cycling Strategy</h4><p>AM: Sucrosomial or Malate. PM: Taurate + Glycinate + L-Threonate. Transdermal: Chloride spray + Epsom baths. Rotate oral forms weekly. Use several types daily.</p></div>
+  <div class="co"><h4>Types &amp; Dosage Strategy</h4><p>Standard Magnesium forms (oxide, citrate, glycinate) rely on ionic dissociation and absorption through magnesium transporters (TRPM6 &amp; TRPM7) in the small intestine. This is rate-limited and often causes osmotic diarrhoea at higher doses. Sucrosomial magnesium bypasses this partially via transcellular routes through the lipid membrane, and possibly paracellular and lymphatic pathways. The result: meaningfully higher bioavailability than magnesium oxide, comparable or superior to citrate and bisglycinate, with less GI disruption at equivalent doses. Split oral Magnesium intake evenly across meals (morning, afternoon, evening) to avoid hitting the saturation ceiling via active channels (TRPM6).</p></div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 18 DETOX -->
+<div class="banner"><div class="bi"><p class="bq">"The optimal longevity mindset should not focus solely on providing the right conditions and nutrients to the body, mind and soul — it's just as important to <em>constantly minimise and remove toxicity</em> out of the divine human machine."</p></div></div>
+<section class="ps c-pink" id="detox">
+  <div class="sh"><div class="sn">18</div><div class="stg"><div class="sl">Toxicity Removal</div><h2 class="st">Detoxification Pathways</h2></div></div>
+  <p class="si">Binding, chelating and excreting heavy metals, microplastics, chemicals, radiation, parasites, and pollutants. Proper mineral ratios essential. Anti-parasitic triad: papaya seeds (adults) + oregano oil (flora) + cloves (eggs).</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">🟢</div><h3>Fermented Chlorella</h3><div class="aka">Heavy Metal Binder</div><p>Binds Hg, Pb, Cd in GI (Gastrointestinal) tract. Broken cell wall critical. Chlorophyll, B12, iron. Fermentation is essential: Chlorella absorbs environmental nutrients very easily, including toxicity. Fermentation removes most toxicity while preserving beneficial properties.</p><div class="ct"><span class="tg">heavy metals</span><span class="tg">fermented</span></div></div>
+    <div class="sc"><div class="ci">🔵</div><h3>Spirulina</h3><div class="aka">Phycocyanin</div><p>Chelation support. Liver detox. Complete protein.</p><div class="ct"><span class="tg">phycocyanin</span></div></div>
+    <div class="sc"><div class="ci">⚖️</div><h3>Zinc:Copper (3:1)</h3><div class="aka">CRITICAL Ratio</div><p>Zinc → metallothionein. Copper → cytochrome c oxidase (Complex IV). Excess Zn = energy collapse. 3:1 NON-NEGOTIABLE.</p><div class="ct"><span class="tg">3:1 CRITICAL</span></div></div>
+    <div class="sc"><div class="ci">🟤</div><h3>Lugol's Iodine</h3><div class="aka">Halogen Displacement</div><p>Displaces fluoride, bromide, chlorine from thyroid and tissues.</p><details><summary>Read more</summary><div class="rm">After 6-12 months of daily Lugol (5%) consumption (start low, go slow — 1 drop in a full glass of water for the first few months), the thyroid will become fully saturated with iodine (as it should be), and you will then benefit from the surplus iodine roaming through the body, cleansing the endocrine system (all human glands), chelating heavy metals and other toxicity as it goes along.</div></details><div class="ct"><span class="tg">thyroid</span><span class="tg">endocrine</span></div></div>
+    <div class="sc"><div class="ci">🍈</div><h3>Papaya Seeds</h3><div class="aka">P450 + Anti-Parasitic</div><p>Activates Cytochrome P450 (Phase I). Take fasted as proteolytic enzyme.</p><div class="ct"><span class="tg">P450</span><span class="tg">fasted</span></div></div>
+    <div class="sc"><div class="ci">🌿</div><h3>Oregano Oil</h3><div class="aka">Antimicrobial Triad</div><p>Carvacrol. Gut dysbiosis, parasites. Part of anti-parasitic triad.</p><div class="ct"><span class="tg">parasites</span></div></div>
+    <div class="sc"><div class="ci">🫚</div><h3>Cloves</h3><div class="aka">Eugenol — Parasite Eggs</div><p>Destroys parasite eggs/larvae. Completes the triad.</p><div class="ct"><span class="tg">eugenol</span></div></div>
+    <div class="sc"><div class="ci">🌾</div><h3>Psyllium Husk</h3><div class="aka">Bulk Binding</div><p>Binds mobilised toxins and bile acids. Exit pathways must stay open.</p><details><summary>Read more</summary><div class="rm">Psyllium husk is a soluble fibre derived from the seeds of the Plantago Ovata plant. Mechanism: absorbs water in the digestive tract, forms a gel-like substance that binds to waste and toxins, promotes elimination aiding detoxification. Benefits: improved bowel regularity (crucial for detox), gentle cleansing — works naturally without irritating the gut lining, unlike harsh chemical laxatives.</div></details><div class="ct"><span class="tg">binding</span></div></div>
+    <div class="sc"><div class="ci">🟫</div><h3>Manganese</h3><div class="aka">MnSOD (Manganese Superoxide Dismutase) Cofactor</div><p>Essential for MnSOD — mitochondria's primary antioxidant enzyme.</p><div class="ct"><span class="tg">MnSOD</span></div></div>
+    <div class="sc"><div class="ci">🌱</div><h3>Neem Leaf Extract</h3><div class="aka">Anti-Parasitic + Blood Purifier</div><p>Traditional broad-spectrum detoxifier. Anti-parasitic, anti-fungal, anti-bacterial. Supports liver and blood purification. Anti-malarial.</p><div class="ct"><span class="tg">anti-parasitic</span><span class="tg">blood purifier</span></div></div>
+    <div class="sc"><div class="ci">🌸</div><h3>Mimosa Pudica Seeds</h3><div class="aka">Ayurvedic Anti-Parasitic</div><p>Ayurvedic medicine (3,000+ years) prescribes Mimosa Pudica for a variety of health remedies. Possesses antibacterial, antivenom, anticonvulsant, antidepressant, and aphrodisiac properties. The sticky substance from the seeds is a powerful agent for extracting parasites and pathogens from the intestinal tract — especially effective against helminths and nematodes (larger worms). Those who use it begin to see worms in their stool. No side effects or adverse reactions in trials, even at higher dosages.</p><details><summary>Read more: Caution</summary><div class="rm">CONTRAINDICATION: Because of its proven anti-fertility properties, Mimosa Pudica should NEVER be consumed by a woman trying to become pregnant. Pregnant women should not consume Mimosa Pudica.</div></details><div class="ct"><span class="tg">Ayurvedic</span><span class="tg">helminths</span><span class="tg">anti-parasitic</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 20 ORGAN DETOX -->
+<section class="ps c-cyan" id="organ-detox">
+  <div class="sh"><div class="sn">19</div><div class="stg"><div class="sl">Detox the Detoxers</div><h2 class="st">Organ-Specific Detox</h2></div></div>
+  <p class="si">The body's filtration organs — liver, kidneys, blood, lymph, gut, lungs — are themselves accumulating toxins. Running systemic detox through overloaded filters just redistributes the problem. Clean the filters first, then detox the body.</p>
+  <div class="cg">
+    <div class="sc"><div class="ci">🩺</div><h3>Liver Cleanse</h3><div class="aka">Master Filter</div><p>Milk thistle (silymarin), papaya seeds (P450), NACET (glutathione Phase II), castor oil packs. Healthy liver = cancer cannot establish.</p><details><summary>Black Raisin Liver Cleanse</summary><div class="rm">200g black raisins (not too soft/hard, not shiny). Wash well. Boil clean water, add raisins, boil 20 mins. Leave to infuse overnight. Next morning strain &amp; gently warm. Drink 45 minutes before food each morning.</div></details><div class="ct"><span class="tg">silymarin</span><span class="tg">P450</span></div></div>
+    <div class="sc"><div class="ci">🩸</div><h3>Blood Purification</h3><div class="aka">Circulatory Detox</div><p>Nattokinase (fibrin), chlorella/spirulina (metals), cayenne pepper (viscosity). Blood is 92% water — hydration is foundation.</p><details><summary>Parsley Blood Cleansing</summary><div class="rm">Boil 150g parsley for 15 minutes in a pot of clean water. Let cool. Once lukewarm, strain into drinking container, store overnight in cool dry place. Drink 45 minutes before food each morning.</div></details><div class="ct"><span class="tg">nattokinase</span></div></div>
+    <div class="sc"><div class="ci">🫘</div><h3>Kidney Flush</h3><div class="aka">Renal Support</div><p>Pure water 2-3L/day, warm lemon water (citrate), dandelion root. Dehydration = #1 stressor.</p><div class="ct"><span class="tg">hydration</span></div></div>
+    <div class="sc"><div class="ci">🧽</div><h3>Lymphatic System</h3><div class="aka">No Pump — Movement Required</div><p>Rebounding, dry brushing, castor oil packs, deep breathing, exercise.</p><details><summary>Read more: Rebounding</summary><div class="rm">Rebounding offers numerous benefits including improved cardiovascular health, enhanced metabolism for weight loss, and better lymphatic circulation — the whole lymphatic system activates within 90 seconds after rebounding starts, aiding detoxification. It is a low-impact exercise that strengthens muscles and joints while being gentle on the body.</div></details><div class="ct"><span class="tg">rebounding</span></div></div>
+    <div class="sc"><div class="ci">🦠</div><h3>Gut Cleanse</h3><div class="aka">Intestinal Reset</div><p>Anti-parasitic triad (papaya seeds, oregano, cloves) + pumpkin seeds (anti-parasitic, zinc-rich). Psyllium binding, bone broth/collagen for mucosal repair, probiotics.</p><div class="co" style="margin-top:.8rem;padding:.8rem"><h4>⚠️ Parasite Cleanse Timing</h4><p>Parasite cleanses MUST be precisely timed with full moons. Parasites have ovulation cycles synchronised with lunar phases — they lay eggs during full moons when they are most active and vulnerable. Starting a cleanse during this window maximises effectiveness. Begin 2-3 days before the full moon and continue for 5-7 days.</p></div><div class="ct"><span class="tg">full moon timing</span><span class="tg">pumpkin seeds</span></div></div>
+    <div class="sc"><div class="ci">🫁</div><h3>Lung Detox</h3><div class="aka">Respiratory Clearance</div><p>NAC/NACET for mucus and glutathione, deep breathing, pine needle tea, eucalyptus steam. Avoid ALL mould.</p><div class="ct"><span class="tg">NAC</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 21 MYCOTOXINS -->
+<section class="ps c-rose" id="mycotoxins">
+  <div class="sh"><div class="sn">20</div><div class="stg"><div class="sl">Critical Hazard</div><h2 class="st">Mycotoxins</h2></div></div>
+  <div class="co" style="border-left-color:var(--red)"><h4>Avoid ANY and ALL Mould Exposure</h4><p>No matter the amount or concentration. Mycotoxins can be deadly. They accumulate, suppress immunity, create terrain for disease.</p></div>
+  <div class="cg">
+    <div class="sc"><div class="ci">⚠️</div><h3>Peanuts — Aflatoxins</h3><p>DO NOT EAT unless freshly harvested. Group 1 carcinogen (IARC). Liver cancer.</p><div class="ct"><span class="tg">avoid</span></div></div>
+    <div class="sc"><div class="ci">🍚</div><h3>Leftover Rice</h3><p>Bacillus cereus — 24h limit. Cereulide is heat-stable. Refrigerate immediately.</p><div class="ct"><span class="tg">24h limit</span></div></div>
+    <div class="sc"><div class="ci">🏠</div><h3>Environmental Mould</h3><p>Inhalation bypasses liver. Enters blood directly. If you can smell it, you're exposed.</p><div class="ct"><span class="tg">inhalation</span></div></div>
+    <div class="sc"><div class="ci">🛡️</div><h3>Defence Protocol</h3><div class="aka">If Exposed — Three Lines of Defence</div><p><strong style="color:var(--rose-light)">1. Immune &amp; Barrier Support:</strong> Vitamin D (from sunlight), Vitamin A, Vitamin C, Zinc + Copper (3:1 ratio — ALWAYS).</p><p style="margin-top:.5rem"><strong style="color:var(--rose-light)">2. Detoxification &amp; Antioxidant Support:</strong> NACET, Glycine, Selenium, Alpha Lipoic Acid (ALA), Milk Thistle, Curcumin BCM-95.</p><p style="margin-top:.5rem"><strong style="color:var(--rose-light)">3. Gut, Microbiome &amp; Binding Agents:</strong> Probiotics (Lactobacillus Acidophilus/Salivarius, Bifidobacterium strains), dietary fibre/prebiotics, activated charcoal + bentonite clay (binding), liposomal Glutathione (liver), sauna (sweat). Prevention &gt; treatment.</p><div class="ct"><span class="tg">3 lines of defence</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 22 GENOTOXICITY -->
+<section class="ps c-red" id="genotoxicity">
+  <div class="sh"><div class="sn">21</div><div class="stg"><div class="sl">DNA Damage Avoidance</div><h2 class="st">Genotoxicity</h2></div></div>
+  <div class="co" style="border-left-color:var(--red)"><h4>Zero Tolerance for DNA Damage</h4><p>Zero smoke inhalation. No alcohol. Near-zero radiation (ionising and non-ionising). No RNA injections. Avoid injections of all types — most contain aluminium. Avoid aluminium and other heavy metals (cadmium, lead, mercury, nickel, etc.) in all forms (cookware, deodorants, vaccines).</p></div>
+  <div class="ig">
+    <div class="ip"><h3>Radiation Shielding</h3><ul><li>4h before MRI/X-ray/ultrasound: take 100mg melatonin</li><li>Minimise all unnecessary imaging</li></ul></div>
+    <div class="ip"><h3>DNA Repair Support</h3><ul><li>NAD+ fuels SIRT1/SIRT2 repair enzymes</li><li>Trans-Resveratrol accelerates sirtuin activity</li><li>Melatonin protects mitochondrial DNA</li><li>NACET provides glutathione for oxidative DNA damage</li><li>Sulforaphane (broccoli sprouts) activates Nrf2</li></ul></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 23 TEAS -->
+<section class="ps c-olive" id="teas">
+  <div class="sh"><div class="sn">22</div><div class="stg"><div class="sl">Therapeutic Teas</div><h2 class="st">Medicinal Teas</h2></div></div>
+  <div class="cg">
+    <div class="sc"><div class="ci">🌲</div><h3>Pine Needle Tea</h3><div class="aka">Suramin + Shikimic Acid + Vitamin C</div><p>Rich in suramin — a potent anti-parasitic, antiviral, and detox agent that inhibits viral replication and supports immune recovery. Contains shikimic acid (same active as Tamiflu). High vitamin C (5× more than lemons). Quercetin. Also contains alpha-pinene (bronchodilator), chlorophyll, iron, and proanthocyanidins. Supports respiratory health, immune function, and heavy metal detoxification.</p><div class="ct"><span class="tg">suramin detox</span><span class="tg">shikimic acid</span><span class="tg">5× vitamin C</span></div></div>
+    <div class="sc"><div class="ci">🌱</div><h3>Fenugreek Tea</h3><div class="aka">Trigonelline + Galactomannan + 4-Hydroxyisoleucine</div><p>Source of trigonelline (NAD+ precursor via Preiss-Handler pathway). Galactomannan fibre for blood sugar control. Contains 4-hydroxyisoleucine which directly stimulates insulin secretion. Supports testosterone via furostanolic saponins (increases free testosterone, inhibits aromatase). Anti-inflammatory (diosgenin). Rich in iron, manganese, and B vitamins. Excellent coffee replacement.</p><div class="ct"><span class="tg">NAD+</span><span class="tg">testosterone</span><span class="tg">insulin</span><span class="tg">coffee replacement</span></div></div>
+    <div class="sc"><div class="ci">🍵</div><h3>Green Tea + Matcha</h3><div class="aka">EGCG + L-Theanine</div><p>EGCG: autophagy + BDNF. L-theanine: calm focus (alpha waves). Matcha = whole leaf. Coffee replacement.</p><div class="ct"><span class="tg">EGCG</span><span class="tg">L-theanine</span></div></div>
+    <div class="sc"><div class="ci">🫚</div><h3>Ginger Tea</h3><div class="aka">Gingerol + Shogaol</div><p>Potent anti-inflammatory (inhibits COX-2, NF-κB). Anti-nausea, improves digestion, thermogenic, supports circulation. Gingerol converts to shogaol when dried — both are bioactive. Helps nutrient absorption.</p><div class="ct"><span class="tg">COX-2</span><span class="tg">digestion</span><span class="tg">thermogenic</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 24 RLT -->
+<section class="ps c-amber" id="rlt">
+  <div class="sh"><div class="sn">23</div><div class="stg"><div class="sl">Solar Therapy</div><h2 class="st">Red Light Therapy &amp; Vitamin D</h2></div></div>
+  <p class="si">The gold standard RLT comes from natural solar rays — don't let anyone tell you otherwise. 10-15 min, timing matters.</p>
+  <div class="ig">
+    <div class="ip"><h3>Natural Solar RLT</h3><ul><li>10-15 min sun exposure, 2×/week, small skin area</li><li>Early morning or late afternoon for best RLT spectrum</li><li>Benefits far outweigh potential skin harm long-term</li><li>Multi Spectral Imaging tracks photo ageing</li></ul></div>
+    <div class="ip"><h3>Benefits Stack</h3><ul><li>Enhances mitochondrial function (cytochrome c oxidase absorbs red light)</li><li>Drives sulfation in skin — sulfate cholesterol synthesis</li><li>Boosts serotonin, circadian rhythm</li><li>Supports active vitamin D2 production naturally</li><li>90%+ UV penetrates clouds</li></ul></div>
+  </div>
+  <div class="cg" style="margin-top:1.5rem">
+    <div class="sc"><div class="ci">☀️</div><h3>Vitamin D2 (Active Form)</h3><div class="aka">The Truth About "Vitamin D"</div><p>D2 is the active form that does all the work — doctors rarely test it because it's always normal to high. Supplemental D3 is an inactive steroidal hormone that disrupts calcium metabolism, suppresses the immune system, and increases absorption of aluminium, heavy metals, and radioactive isotopes into brain and soft tissues. 10-15 min sunlight to small skin area, 2×/week supplies all vitamin D necessary. 90%+ UV penetrates clouds. Environmental factors are rarely an impediment.</p><div class="ct"><span class="tg">D2 active</span><span class="tg">D3 = storage hormone</span><span class="tg">sunlight sufficient</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 25 ANTIDOTES -->
+<section class="ps c-gold" id="antidotes">
+  <div class="sh"><div class="sn">24</div><div class="stg"><div class="sl">The Nuclear Options</div><h2 class="st">Universal Antidotes</h2></div></div>
+  <p class="si">Potent agents requiring strict protocols. Proceed with informed respect.</p>
+  <div class="cg" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr))">
+    <div class="sc"><div class="ci">💧</div><h3>DMSO</h3><div class="aka">Dimethyl Sulfoxide</div><p>FDA-approved solvent. Penetrates all tissues except nails. Hydroxyl scavenger. Anti-inflammatory. Sulfation donor. Purity paramount — transports whatever is on skin.</p><div class="ct"><span class="tg">transdermal</span><span class="tg">sulfation</span></div></div>
+    <div class="sc"><div class="ci">⚗️</div><h3>ClO₂ (CDS)</h3><div class="aka">Chlorine Dioxide Solution</div><p>Broad-spectrum antimicrobial via pH-dependent selective oxidation. Water purification, wound care. Controversial internally. Strict protocols.</p><div class="ct"><span class="tg">selective oxidizer</span></div></div>
+    <div class="sc"><div class="ci">💉</div><h3>EDTA IV Chelation Therapy</h3><div class="aka">⚠️ Professional Only</div><p>CAUTION: Must only be done with professional help. EDTA IV chelation for detoxification of heavy metals, graphene oxide, vaccine injury (spike protein and other toxins/heavy metals), and hydrogel removal. Powerful but requires medical supervision, proper dosing, and mineral replenishment protocols.</p><details><summary>Read more: Medical Supervision</summary><div class="rm">Seek a medical professional expert in DNA Methylation and EDTA Chelation Therapy.</div></details><div class="ct"><span class="tg">professional only</span><span class="tg">heavy metals</span><span class="tg">chelation</span></div></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 26 COFFEE -->
+<section class="ps c-rose" id="coffee">
+  <div class="sh"><div class="sn">25</div><div class="stg"><div class="sl">Critical Warning</div><h2 class="st">The Coffee Problem</h2></div></div>
+  <div class="co" style="border-left-color:var(--red)"><h4>1 Cup Coffee = 5 Glasses of Pure Water</h4><p>Potent diuretic. Intracellular Mg and Ca depletion exacerbates dehydration. Anything that leaches magnesium is a massive longevity downside.</p></div>
+  <div class="ig">
+    <div class="ip"><h3>Dehydration</h3><ul><li>5 glasses clean water per cup needed</li><li>Intracellular Mg + Ca depletion</li></ul></div>
+    <div class="ip"><h3>Neurotransmitters</h3><ul><li>Blocks adenosine → disrupts sleep</li><li>Spikes cortisol → chronic stress</li><li>Depletes serotonin/dopamine</li><li>Dependency ≠ energy</li></ul></div>
+    <div class="ip"><h3>1,000 Chemicals</h3><ul><li>Raises homocysteine (CV risk)</li><li>Inhibits iron absorption</li><li>Mg depletion makes all diseases worse</li><li>Replacements: fenugreek, matcha, green tea, ginger</li></ul></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<div class="banner"><div class="bi"><p class="bq">"Science is not exact, nor is it ever 'settled', or definitive. Some portions are simply more temporarily well defined than others." <em>— Pedro Basto, 12/04/2026</em></p></div></div>
+
+<!-- 27 SUPPLEMENT STRATEGIES -->
+<section class="ps c-gold" id="supplements">
+  <div class="sh"><div class="sn">26</div><div class="stg"><div class="sl">Strategies That Work</div><h2 class="st">How to Supplement</h2></div></div>
+  <div class="ig">
+    <div class="ip"><h3>Timing &amp; Delivery</h3><ul><li>Fat-soluble vitamins WITH meals (trans-resveratrol, K2, EVOO)</li><li>Proteolytic enzymes FASTED (papaya seeds, bromelain)</li><li>AM: NMN, sucrosomial Mg, malate Mg</li><li>PM: Mg glycinate, taurate, L-threonate, 5-HTP, melatonin</li><li>Cycle: 5 days on / 2 days off. Stop ALL supplementation for a whole month at least once or twice per year — this returns the body to nominal levels, enhances nutrient sensitivity on resumption, and retrains metabolic functions as nutrient assembly lines fire up again</li></ul></div>
+    <div class="ip"><h3>Choose Superior Forms</h3><ul><li>Acetyl groups for BBB penetration</li><li>Bioavailable forms: Benfotiamine (B1), Curcumin BCM-95</li><li>Liposomal for glutathione</li><li>Ethyl esters for NAC (NACET)</li><li>Sublingual for NMN, chelated minerals</li><li>Use several types of magnesium daily, spread doses into smaller chunks (with meals) throughout the day to maximise absorption — active channel TRPM6 saturates and passive absorption only captures 7% of whatever is present. Cycle absorption routes (topically, orally, Epsom salt baths, etc.)</li><li>Lactic acid bacteria (kefir) as biodelivery vehicle — only 30% of oral intake is processed</li></ul></div>
+    <div class="ip"><h3>Avoid Toxic Excipients</h3><ul><li>READ INGREDIENTS — always</li><li>Avoid: Magnesium Stearate, Sodium Benzoate, Titanium Dioxide, Silicon Dioxide, Magnesium Silicate, Soybean Oil, Shellac, Cornstarch, Citric Acid, Carrageenan, Potassium Sorbate</li><li>Choose vegetable-source anti-caking agents</li><li>These accumulate and impair absorption</li></ul></div>
+    <div class="ip"><h3>Quality &amp; Purity</h3><ul><li>Independent third-party lab testing per batch</li><li>Learn home purity tests: collagen, honey, olive oil, cod liver oil, coconut oil</li><li>Stack with healthy diet &amp; longevity interventions</li><li>While few nutrients rapidly become toxic (calcium, copper, iron), many have little toxicity at almost any dose</li></ul></div>
+  </div>
+</section>
+
+<div class="dv"><span>✦</span></div>
+
+<!-- 28 IMPLEMENTATION -->
+<section class="ps c-gold" id="implementation">
+  <div class="sh"><div class="sn">27</div><div class="stg"><div class="sl">Process &amp; Tracking</div><h2 class="st">Implementation</h2></div></div>
+  <div class="co"><h4>The Positive Feedback Loop</h4><p>NAD+ repletion → ATP → more energy → better exercise → better nutrition → better sleep → enhanced repair → repeat. The loop IS the strategy.</p></div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;margin-bottom:1.2rem;color:var(--gold)">Daily Timing Protocol</h3>
+  <div class="timing">
+    <div class="timing-slot" style="--slot-color:var(--amber-light)">
+      <div class="t-time">Upon Waking</div>
+      <h4>AM — Fasted</h4>
+      <ul>
+        <li>Proteolytic enzymes (papaya seeds, bromelain)</li>
+        <li>NMN (sublingual)</li>
+        <li>1 tbsp Green EVOO or C8 MCT oil (autophagy turbo)</li>
+        <li>NACET</li>
+        <li>Nattokinase</li>
+        <li>Bio Cultures Complex</li>
+        <li>Liposomal Vitamin C</li>
+        <li>Taurine</li>
+      </ul>
+    </div>
+    <div class="timing-slot" style="--slot-color:var(--green-light)">
+      <div class="t-time">Morning</div>
+      <h4>AM — With Breakfast</h4>
+      <ul>
+        <li>Lemon + cayenne pepper [warm] water</li>
+        <li>Liposomal Vitamin C</li>
+        <li>Mg Sucrosomial or Malate</li>
+        <li>Trans-Resveratrol (with fat)</li>
+        <li>K2 MK-7, ALA (fat-soluble with meal)</li>
+        <li>Creatine (3-5g, timing flexible)</li>
+        <li>Astaxanthin</li>
+        <li>Cocoa powder (pure, non-dutched, heavy metals free, high flavanol)</li>
+        <li>Psyllium husk</li>
+        <li>Green banana flour</li>
+      </ul>
+    </div>
+    <div class="timing-slot" style="--slot-color:var(--blue-light)">
+      <div class="t-time">Midday</div>
+      <h4>With Lunch</h4>
+      <ul>
+        <li>Lemon + cayenne pepper [warm] water</li>
+        <li>ACV — 1-2 tsp before eating (30% carb block)</li>
+        <li>Omega-3 EPA/DHA (with fat)</li>
+        <li>Curcumin BCM-95 (with fat)</li>
+        <li>Quercetin + bromelain</li>
+        <li>CoQ10 / Ubiquinol</li>
+        <li>Mg dose (spread for TRPM6 absorption)</li>
+        <li>Taurine</li>
+        <li>NACET</li>
+        <li>Zinc + Copper 3:1</li>
+        <li>Liposomal Vitamin C</li>
+        <li>Astaxanthin</li>
+        <li>Fermented Chlorella</li>
+        <li>Fisetin</li>
+        <li>CaAKG</li>
+        <li>NAD+ Complete (NMN, NR, Trigonelline)</li>
+        <li>Milk Thistle</li>
+        <li>Selenium</li>
+        <li>Tongkat Ali</li>
+        <li>Glycine</li>
+        <li>Triple Magnesium Complex (chelated)</li>
+        <li>Black Garlic 15:1 concentration</li>
+        <li>C8 MCT Oil</li>
+        <li>Black Seed Oil</li>
+        <li>Ionic Boron (drops)</li>
+        <li>Liposomal Vit B complex (drops)</li>
+        <li>K2 MK-7</li>
+        <li>Benfotiamine</li>
+        <li>Alpha Lipoic Acid</li>
+        <li>L-Leucine</li>
+        <li>L-Carnosine</li>
+        <li>Pea protein powder</li>
+        <li>Seeds & Nuts</li>
+        <li>Homemade Kefir</li>
+        <li>Ashwagandha</li>
+        <li>Dihydroberberine</li>
+        <li>L-Citrulline (stop 2 weeks prior to surgery, restart 1 week post-surgery)</li>
+      </ul>
+      <details><summary>Read more: Vitamin B Complex</summary><div class="rm">B Vitamins should be taken together, as they work synergistically in the body. They support each other's functions (you literally need some types of Vitamin B to make others) and enhance overall effectiveness.</div></details>
+    </div>
+    <div class="timing-slot" style="--slot-color:var(--purple-light)">
+      <div class="t-time">Evening</div>
+      <h4>PM — Before Bed</h4>
+      <ul>
+        <li>Mg Glycinate + Taurate + L-Threonate</li>
+        <li>5-HTP (serotonin → melatonin)</li>
+        <li>Melatonin</li>
+      </ul>
+    </div>
+    <div class="timing-slot" style="--slot-color:var(--teal-light)">
+      <div class="t-time">As Needed</div>
+      <h4>Transdermal / Weekly / Annual</h4>
+      <ul>
+        <li>Mg Chloride spray (topical, daily)</li>
+        <li>Epsom salt baths (2-3×/wk, sulfation)</li>
+        <li>Dry Finnish sauna 95°C+ (20 min)</li>
+        <li>Cold plunge below 5°C for 2+ min</li>
+        <li>Senolytic pulse (fisetin, high-dose, periodic)</li>
+        <li>Extended fast 48-72h (1-2×/year)</li>
+        <li>Full supplement pause (1 month, 1-2×/year)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ig">
+    <div class="ip"><h3>Getting Started</h3><ul><li>Start with foundations: sleep, water, nutrition, exercise, stress management</li><li>Add one supplement at a time, track 2-4 weeks</li><li>Baseline bloodwork before starting</li><li>Cycle: 5 days on / 2 days off. Stop all supplementation for a month, once or twice per year</li></ul></div>
+    <div class="ip"><h3>Testing &amp; Monitoring</h3><ul><li>Baseline before supplementation</li><li>Follow-up at 3-6 months</li><li>Annual monitoring</li><li>Symptom tracking</li><li>Epigenetic clocks every 6-12 months (DunedinPACE)</li><li>HbA1c, CRP, IL-6, NAD+, hormones</li><li>Functional: grip strength, VO2max, cognitive speed</li></ul></div>
+    <div class="ip"><h3>Supplementation Guidelines — Quality Markers</h3><ul><li>1. Third-party testing (for dose accuracy, quality, purity, toxicity)</li><li>2. GMP (Good Manufacturing Practice) certification</li><li>3. Bioavailable forms &amp; delivery mechanisms (look for liposomal, sublingual, time-delay capsules, etc.)</li><li>4. Clean additives (NO Magnesium Stearate, Sodium Benzoate, Titanium Dioxide, Silicon Dioxide, Magnesium Silicate, Soybean Oil, Shellac, Cornstarch, Citric Acid, Carrageenan, Potassium Sorbate)</li><li>5. Proper storage guidelines</li></ul></div>
+    <div class="ip"><h3>8 Types of Additives in Supplements</h3><p>Understanding what's inside your supplements beyond the active ingredient:</p><details><summary>1. Fillers</summary><div class="rm">The most used additives. Added to bulk up products — the active ingredient is often so small it wouldn't be noticeable without a filler.</div></details><details><summary>2. Binders</summary><div class="rm">Help ingredients stay together. Keep compressed tablets in one piece. Can also serve as fillers in tablets with small active ingredients.</div></details><details><summary>3. Anti-Caking Agents (Flow Agents)</summary><div class="rm">Prevent powder from clumping. Also added to capsule exteriors so they move through machines without sticking. The worst part: they don't need to be labelled in the ingredient list.</div></details><details><summary>4. Disintegrants</summary><div class="rm">Help break down tablets once in your system. Anything labelled "fast-acting" usually contains a disintegrant responsible for this.</div></details><details><summary>5. Coatings &amp; Glazes</summary><div class="rm">Function as glue on the outside of supplements, especially in humid conditions. Enteric coatings dissolve slowly so the supplement bypasses stomach acid and reaches the small intestine or pancreas.</div></details><details><summary>6. Preservatives</summary><div class="rm">Extend shelf life and keep mould, fungi, yeast, and bacteria away. Natural: Vitamins A, C, E, amino acids. Artificial: Benzoates, Parabens, Sulfites, Sorbates, TBHQ (Tertiary Butylhydroquinone), BHA (Butylated Hydroxyanisole).</div></details><details><summary>7. Acidulants</summary><div class="rm">Multi-purpose: enhance flavour, increase shelf life, improve colour/texture, prevent mould, control pH. Common forms: lactic acid, citric acid.</div></details><details><summary>8. Colours &amp; Flavourings</summary><div class="rm">Artificial colours make products appear brighter. Common flavour enhancers are sweeteners — natural (fruit extracts) and artificial (high fructose corn syrup, aspartame, saccharin).</div></details></div>
+    <div class="ip"><h3>11 Popular Supplement Fillers to Avoid</h3><ul><li>1. Magnesium Stearate</li><li>2. Sodium Benzoate</li><li>3. Titanium Dioxide</li><li>4. Silicon Dioxide</li><li>5. Magnesium Silicate</li><li>6. Soybean Oil</li><li>7. Shellac</li><li>8. Cornstarch</li><li>9. Citric Acid</li><li>10. Carrageenan</li><li>11. Potassium Sorbate</li></ul></div>
+    <div class="ip"><h3>Supplement Manufacturing Methods</h3><p>Under the links below, you will find the 3 most common manufacturing methods for NMN (Nicotinamide Mononucleotide):</p><details><summary>Chemical Synthesis Method</summary><div class="rm">Uses chemical reactions from precursor molecules. More straightforward and cost-effective. Purity may not be as high, contaminants possible. Purity: Moderate · Safety: Moderate · Cost: Low · Yield: Moderate · Mass Production: High.</div></details><details><summary>Fermentation Method</summary><div class="rm">Uses microorganisms (bacteria, yeast) to generate NMN from carbohydrates. More environmentally friendly. May require extensive purification. Purity: High · Safety: High · Cost: Moderate · Yield: High · Mass Production: High.</div></details><details><summary>Biological Enzyme Method</summary><div class="rm">Biotechnological approach using Escherichia coli. Produces high levels of pure NMN. Requires more investment. Purity: Very High · Safety: High · Cost: High · Yield: High · Mass Production: Moderate. If purity is the primary concern, this method is preferred.</div></details></div>
+    <div class="ip"><h3>Safety Considerations</h3><ul><li>1. Start low, go slow</li><li>2. Monitor for interactions</li><li>3. Regular blood work</li><li>4. Adjust for medical conditions</li><li>Few nutrients rapidly become toxic (calcium, copper, iron) — many have little toxicity at almost any dose</li><li>A significant Mg deficiency makes all diseases worse — supplement as much as tolerated</li></ul></div>
+    <div class="ip"><h3>Healthy Fat Intake Formula</h3><ul><li>20-35% of total daily calories should be healthy fats</li><li>On 2,000 cal/day = 400-800 calories from healthy fats</li><li>Must include omega-3 fatty acids (EPA/DHA)</li><li>EVOO, C8 MCT, coconut oil, cod liver oil, omega-3</li><li>All oils must be non-synthetic</li></ul></div>
+    <div class="ip"><h3>Containers &amp; Storage</h3><ul><li>Cooking &amp; tableware: full stainless steel or copper (naturally antibacterial, antifungal)</li><li>Drinking water: copper vessel is the gold standard (after purification)</li><li>Long-term water storage: stainless steel</li><li>Avoid plastic containers for food and water</li><li>For water filtration at home, consider a Reverse Osmosis Water Filtration System</li></ul></div>
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<div class="disc">
+  <p>Disclaimer from Pedro Basto: I am not against all synthetic/lab-made vitamins and minerals. I am against synthetic steroidal hormones being marketed as "vitamins" for profit, such as "vitamin" D3. This content is for educational purposes only. Not medical advice. Consult a healthcare professional. Individual responses vary. Entheogens (Ayahuasca, Psilocybin, Bufo Alvarius) are controlled substances in many jurisdictions. EDTA (Ethylenediaminetetraacetic Acid) chelation requires professional supervision. 80% lifestyle, 20% genetics — foundations first.</p>
+  <p style="margin-top:1rem">DISCLAIMER: I am not a health professional, nor do I have any qualifications for any of the subject matters covered herein. None of this content qualifies as health, medical, or nutritional advice, and you should always seek the help of your medical practitioner or chosen health professional. If you decide to undertake any treatment, therapy, follow any advice, or ingest/imbibe any nutrients/supplements or liquids mentioned in this site, you are doing so entirely at your own risk and responsibility, and I will not be held liable for any potential consequences that may arise from such actions.</p>
+</div>
+
+<div class="update-banner">
+  <p>Check back regularly for more Fusion Protocol updates! From ER-100 to epigenetic reprogramming, real-time continuous multi-omic monitoring &amp; measurement, and more!</p>
+</div>
+
+<footer>
+  <p class="ab">Pedro Basto is a longevity researcher and protocol designer who tracks thousands of variables daily. The Fusion Protocol integrates multiple doctrines, therapies, and ideologies of longevity into a single coherent framework.</p>
+  <p>The Fusion Protocol — Pedro Basto — 2026</p>
+</footer>
+
+<script>
+// Nav shrink
+const nav=document.getElementById('mainNav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>50)});
+
+// Sections observer (fade in + card stagger)
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.04,rootMargin:'0px 0px -20px 0px'});
+document.querySelectorAll('.ps').forEach(s=>obs.observe(s));
+
+// Build section navigator
+const sNav=document.getElementById('sectionNav');
+const sections=document.querySelectorAll('.ps[id]');
+const sLabels={fundamentals:'Fundamentals',lifestyle:'Lifestyle',fasting:'Fasting',stress:'Stress',biomarkers:'Biomarkers',autophagy:'Autophagy','building-blocks':'Blocks',nutrition:'Nutrition',gut:'Gut',recycle:'Recycle',nad:'NAD+',mito:'Mito',antioxidants:'Antioxidants',cardio:'Cardio','anti-inflammatories':'Anti-Infl.','inflammation-vectors':'Vectors',oils:'Oils',neuro:'Brain',magnesium:'Magnesium',detox:'Detox','organ-detox':'Organs',mycotoxins:'Mycotoxins',genotoxicity:'DNA',teas:'Teas',rlt:'RLT',antidotes:'Antidotes',coffee:'Coffee',supplements:'Supps',implementation:'Implement'};
+sections.forEach(s=>{
+  const a=document.createElement('a');
+  a.href='#'+s.id;
+  a.innerHTML='<span class="dot"></span><span class="dlbl">'+(sLabels[s.id]||s.id)+'</span>';
+  a.dataset.id=s.id;
+  sNav.appendChild(a);
+});
+
+// Active section tracking
+let lastActive='';
+const secObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting&&e.intersectionRatio>.1){
+      const id=e.target.id;
+      if(id!==lastActive){
+        lastActive=id;
+        sNav.querySelectorAll('a').forEach(a=>a.classList.toggle('act',a.dataset.id===id));
+      }
+    }
+  });
+},{threshold:.15,rootMargin:'-20% 0px -60% 0px'});
+sections.forEach(s=>secObs.observe(s));
+
+// Show section nav after scroll past hero
+const heroEl=document.querySelector('.hero');
+const heroObs=new IntersectionObserver(e=>{
+  sNav.classList.toggle('vis',!e[0].isIntersecting);
+},{threshold:.1});
+heroObs.observe(heroEl);
+
+// Back to top
+const btt=document.getElementById('btt');
+window.addEventListener('scroll',()=>{
+  btt.classList.toggle('vis',window.scrollY>window.innerHeight);
+});
+
+// Keyboard: T=top, Ctrl+K or /=search
+document.addEventListener('keydown',e=>{
+  if(e.key==='t'&&!e.ctrlKey&&!e.metaKey&&document.activeElement.tagName!=='INPUT'){
+    e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});
+  }
+  if((e.key==='k'&&(e.ctrlKey||e.metaKey))||e.key==='/'){
+    if(document.activeElement.tagName!=='INPUT'){e.preventDefault();toggleSearch();}
+  }
+  if(e.key==='Escape'){closeSearch();}
+});
+
+// Search
+const searchWrap=document.getElementById('searchWrap');
+const searchInput=document.getElementById('searchInput');
+const searchResults=document.getElementById('searchResults');
+let searchIndex=[];
+
+function buildSearchIndex(){
+  searchIndex=[];
+  document.querySelectorAll('.sc').forEach(card=>{
+    const section=card.closest('.ps');
+    const secId=section?section.id:'';
+    const secTitle=section?section.querySelector('.st')?.textContent:'';
+    const title=card.querySelector('h3')?.textContent||'';
+    const aka=card.querySelector('.aka')?.textContent||'';
+    const body=card.querySelector('p')?.textContent||'';
+    const rm=card.querySelector('.rm')?.textContent||'';
+    const tags=Array.from(card.querySelectorAll('.tg')).map(t=>t.textContent).join(' ');
+    searchIndex.push({title,aka,body:body+' '+rm+' '+tags,secId,secTitle,el:card});
+  });
+  // Also index info panels
+  document.querySelectorAll('.ip').forEach(panel=>{
+    const section=panel.closest('.ps');
+    const secId=section?section.id:'';
+    const secTitle=section?section.querySelector('.st')?.textContent:'';
+    const title=panel.querySelector('h3')?.textContent||'';
+    const body=panel.textContent||'';
+    searchIndex.push({title,aka:'',body,secId,secTitle,el:panel});
+  });
+}
+
+function toggleSearch(){
+  if(searchWrap.classList.contains('open')){closeSearch();}
+  else{searchWrap.classList.add('open');searchInput.focus();if(!searchIndex.length)buildSearchIndex();}
+}
+function closeSearch(){searchWrap.classList.remove('open');searchInput.value='';searchResults.innerHTML='';}
+
+searchInput.addEventListener('input',function(){
+  const q=this.value.toLowerCase().trim();
+  searchResults.innerHTML='';
+  if(q.length<2)return;
+  const hits=searchIndex.filter(item=>{
+    return item.title.toLowerCase().includes(q)||item.aka.toLowerCase().includes(q)||item.body.toLowerCase().includes(q);
+  }).slice(0,15);
+  hits.forEach(h=>{
+    const div=document.createElement('div');
+    div.className='search-hit';
+    const snippet=h.body.length>120?h.body.substring(0,120)+'…':h.body;
+    div.innerHTML='<div class="sh-section">'+h.secTitle+'</div><h4>'+h.title+'</h4><p>'+snippet+'</p>';
+    div.onclick=()=>{
+      closeSearch();
+      h.el.scrollIntoView({behavior:'smooth',block:'center'});
+      h.el.style.borderColor='var(--gold)';
+      h.el.style.boxShadow='0 0 30px rgba(201,168,76,0.15)';
+      setTimeout(()=>{h.el.style.borderColor='';h.el.style.boxShadow='';},2500);
+    };
+    searchResults.appendChild(div);
+  });
+  if(!hits.length){searchResults.innerHTML='<p style="color:var(--text-muted);text-align:center;padding:2rem;font-size:.8rem">No results for "'+q+'"</p>';}
+});
+</script>
+</body>
+</html>
